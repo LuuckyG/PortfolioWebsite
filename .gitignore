@@ -1,5 +1,6 @@
-_site
-.sass-cache
+### Jekyll ###
+_site/
 .jekyll-cache
-.jekyll-metadata
-vendor
+
+### Sass ###
+.sass-cache
