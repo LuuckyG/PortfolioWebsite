@@ -1,0 +1,13 @@
+<header id=#header>
+    <div class="logo"><a href="#header">LOGO</a></div>
+
+    <nav>
+        {% for item in site.data.navigation %}
+            <a href="#{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+        {% endfor %}
+    </nav>
+
+    <h1><span>{{ site.title }}</span></h1>
+    <p class="desc">{{ site.description }}</p>
+
+</header>
