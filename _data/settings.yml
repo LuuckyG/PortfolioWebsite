@@ -1,0 +1,56 @@
+# ---------------------
+# General Settings
+
+name: Luuk Geelen
+title: Luuk Geelen
+description: Back End Python Engineer
+email: luuk.geelen@hotmail.com
+
+url: https://luuckyg.github.io/
+baseurl: ''
+
+
+menu:
+- {name: About, link: '#about'}
+- {name: Skills, link: '#skills'}
+- {name: Projects, link: '#projects'}
+- {name: Contact, link: '#contact'}
+
+
+
+# ---------------------
+# About Section
+about_me: 
+  - 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio doloremque nulla molestias molestiae, sequi consequatur 
+error quibusdam velit in maiores incidunt facilis sit accusantium labore, sed tempore dicta! Asperiores, commodi.
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus consectetur laborum delectus fuga aperiam libero 
+et, eligendi animi itaque natus consequatur hic, minus asperiores deserunt labore impedit doloremque quasi unde?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, illum obcaecati nam rerum provident tempora! 
+Non rerum minima ipsum reiciendis at exercitationem provident neque accusamus harum recusandae, aliquam veritatis qui.'
+
+
+skills:
+  - {name: Python, proficiency: 8}
+
+
+
+# ---------------------
+# Work Section
+
+clients:
+  - {name: Evolvalor}
+  - {name: Quantib}
+
+
+projects:
+  - {name: WBSO Tool, desc: blah blah}
+  - {name: Attention-based Deep Learning, desc: Very cool stuff}
+
+
+
+# ---------------------
+# Social
+
+social:
+  - {icon: 'GitHub', link: https://github.com/LuuckyG'}
+  - {icon: 'linkedin', link: 'https://www.linkedin.com/in/luuk-geelen-184806a9/'}

@@ -1,12 +1,3 @@
-# Site Settings
-name: Luuk Geelen
-title: Luuk Geelen
-description: Back End Python Engineer
-email: luuk.geelen@hotmail.com
-url: https://luuckyg.github.io/
-baseurl: ''
-
-
 # Build settings
 markdown: kramdown
 permalink: pretty
