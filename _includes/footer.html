@@ -1,16 +1,27 @@
 <footer id=#footer>
 
-    <div class="content-wrapper">
-        <div class="logo">LOGO</div>
+    <div class="footer-wrapper">
+        <div class="logo logo-white">{{ site.data.settings.logo }}</div>
 
         {% for item in site.data.settings.menu %}
             <a class="nav-item" href="#{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
         {% endfor %} 
                 
-        <p id="copyright"><small>Copyright {{ site.data.settings.name }} {{ site.time | date: '%Y' }}</small></p > 
+        <p id="copyright"><small>Copyright <i class="fa fa-copyright"></i> {{ site.data.settings.name }} {{ site.time | date: '%Y' }}</small></p > 
         
     </div>
     
-    <a href="#header" id="btn-to-top"><button>Back to top</button></a>
+    <div class="socials">
+        <ul>
+            {% for social in site.data.settings.socials %}
+            <li>
+                
+                <a id="{{ social.icon-id }}"  href="{{ social.link }}" target="_blank">
+                   <i class="{{ social.class }}" aria-hidden="true"></i>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
 
 </footer>
