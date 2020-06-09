@@ -1,0 +1,22 @@
+<section id="skills" class="skills-section">
+
+    <div class="content-wrapper">
+        <div class="skills">
+            <p>My main skills:</p>
+            {% for skill in site.data.settings.skills %}
+                <button>{{skill.name}}</button>
+            {% endfor %} 
+        </div>
+        
+        <div class="technologies">
+            <p>Technologies and Frameworks were I am familiar and worked with, include:</p>
+            {% for tech in site.data.settings.technologies %}
+                <button>{{tech.name}}</button>
+            {% endfor %}
+            {% for f in site.data.settings.frameworks %}
+                <button>{{f.name}}</button>
+            {% endfor %}
+        </div>
+    </div>
+    
+</section>

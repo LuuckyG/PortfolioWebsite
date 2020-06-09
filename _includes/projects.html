@@ -1,0 +1,15 @@
+<section id="projects" class="projects-section">
+
+    <div class="content-wrapper">
+        <h3>Work</h3>
+        {% for project in site.data.settings.projects %}
+            <div class="project-card">
+                <div class="project-img">
+                    {{project.name}}
+                </div>
+                <p class="project-desc">{{ project.description }}</p>
+            </div>
+        {% endfor %} 
+    </div>
+
+</section>

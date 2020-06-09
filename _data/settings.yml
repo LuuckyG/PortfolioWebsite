@@ -2,9 +2,10 @@
 # General Settings
 
 name: Luuk Geelen
-title: Luuk Geelen
+title: Hi, I'm Luuk!
 description: Back End Python Engineer
 email: luuk.geelen@hotmail.com
+logo: LG
 
 url: https://luuckyg.github.io/
 baseurl: ''
@@ -30,27 +31,67 @@ Non rerum minima ipsum reiciendis at exercitationem provident neque accusamus ha
 
 
 skills:
-  - {name: Python, proficiency: 8}
+- {name: Data Analytics, proficiency: 10}
+- {name: Machine Learning, proficiency: 8}
+- {name: Medical Physics, proficiency: 9}
+- {name: Software Development, proficiency: 8}
+- {name: Project Management, proficiency: 8}
+- {name: Teamwork, proficiency: 9}
+
+
+languages:
+- {name: Python, proficiency: 9}
+- {name: SQL, proficiency: 8}
+- {name: CSS, proficiency: 8}
+- {name: HTML, proficiency: 8}
+- {name: JavaScript, proficiency: 8}
+- {name: C, proficiency: 7}
+- {name: Matlab, proficiency: 7}
+
+
+frameworks:
+- {name: Tensorflow, proficiency: 8}
+- {name: PyTorch, proficiency: 8}
+- {name: Flask, proficiency: 8}
+- {name: Bootstrap, proficiency: 8}
 
 
 
-# ---------------------
+#-------------------------------
 # Work Section
 
-clients:
-  - {name: Evolvalor}
-  - {name: Quantib}
-
-
 projects:
-  - {name: WBSO Tool, desc: blah blah}
-  - {name: Attention-based Deep Learning, desc: Very cool stuff}
+- {name: WBSO Tool, description: blah blah}
+- {name: Attention-based Deep Learning, description: Very cool stuff}
+- {name: TYPO International Design Talks, description: Placeholder 1}
+- {name: City-IN website concept, description: Placeholder 2}
+- {name: Crispy Icons, description: Placeholder 3}
+- {name: Flat Mobile UI/UX Concept, description: Placeholder 4}
+- {name: Fresh It Up, description: Placeholder 5}
+- {name: Timeline Page, description: Placeholder 6}
+- {name: Weather Dashboard, description: Placeholder 7}
+# - {name: Stripes & Co, folder: 'proj-8', file: 'work/proj-8.html'}
+
+
+
+#-------------------------------
+# Clients Section
+
+clients:
+- {name: 'Scott Summers',
+  title: 'Director of Design, OnToText Ind.',
+  quote: '<p><strong>While we all felt that Luuk was a great</strong> asset to our team — and really worked hard to understand our products from the point of view of the customer</p>',
+  logo: 'LOGO'}
+- {name: 'Hank McCoy',
+  title: 'Eater of Salad, Antartica Int.',
+  quote: '<p><strong>Working with Luuk was the highlight of my career.</strong></p>',
+  logo: 'LOGO'}
 
 
 
 # ---------------------
 # Social
 
-social:
-  - {icon: 'GitHub', link: https://github.com/LuuckyG'}
-  - {icon: 'linkedin', link: 'https://www.linkedin.com/in/luuk-geelen-184806a9/'}
+socials:
+  - {name: 'Github', icon-id: 'github', link: https://github.com/LuuckyG', class: "fa fa-github"}
+  - {name: 'LinkedIn', icon-id: 'linkedin' , link: 'https://www.linkedin.com/in/luuk-geelen-184806a9/', class: "fa fa-linkedin"}
