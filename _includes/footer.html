@@ -1,0 +1,16 @@
+<footer id=#footer>
+
+    <div class="content-wrapper">
+        <div class="logo">LOGO</div>
+
+        {% for item in site.data.settings.menu %}
+            <a class="nav-item" href="#{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+        {% endfor %} 
+                
+        <p id="copyright"><small>Copyright {{ site.data.settings.name }} {{ site.time | date: '%Y' }}</small></p > 
+        
+    </div>
+    
+    <a href="#header" id="btn-to-top"><button>Back to top</button></a>
+
+</footer>
