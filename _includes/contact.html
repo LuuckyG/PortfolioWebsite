@@ -1,27 +1,26 @@
-<section id="contact" class="contact-section">
+<section id="contact" class="contact-section alt-background">
 
     <div class="content-wrapper">    
-        <div class="contact-form">
-            Lets talk!
+        <div class="contact-form-header">
+            <h3>Lets talk!</h3>
         </div>
 
-        <form class="contact-form">
+        <form class="contact-form" method="POST" action="//formspree.io/{{site.data.settings.email}}">
 
-            <fieldset class="contact-info-group">
+            <fieldset class="contact-info-wrapper">
                 <label><span>Your Name</span>
-                <input placeholder="Name"></label>
-
-                <label><span>Subject</span>
-                <input placeholder="Subject"></label>
-
-            </fieldset>
+                <input></label>
+    
+                <label><span>Your Email</span>
+                <input></label>
+            </fieldset>            
 
             <label><span>Message</span>
             <textarea placeholder="Your message"></textarea></label>
-
-            <fieldset class="submit-wrap">
-                <input type="submit" value="Send">
-            </fieldset>
+            
+            <div class="submit-wrapper">
+                <button type="submit">Send</button>
+            </div>
 
         </form>
     </div>
