@@ -1,7 +1,7 @@
 <footer id=#footer>
 
     <div class="footer-wrapper">
-        <div class="logo logo-white">{{ site.data.settings.logo }}</div>
+        <div class="logo logo-white"><a href="{{ site.data.settings.url }}">{{ site.data.settings.logo }}</a></div>
 
         {% for item in site.data.settings.menu %}
             <a class="nav-item" href="#{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
