@@ -1,6 +1,7 @@
 
 $(document).ready(function(){
-
+  openmobileNavbar()
+  closemobileNavbar()
 });
 
 $(function() {
@@ -18,3 +19,23 @@ $(function() {
 
     });
 });
+
+function openmobileNavbar() {
+  var mobileNav = document.getElementById("mobile-links");
+  var openIcon = document.getElementById("mobile-menu");
+  var closeIcon = document.getElementById("mobile-menu-close");
+
+  mobileNav.style.display = "block";
+  closeIcon.style.display = "block";
+  openIcon.style.display = "none";
+}
+
+function closemobileNavbar() {
+  var mobileNav = document.getElementById("mobile-links");
+  var openIcon = document.getElementById("mobile-menu");
+  var closeIcon = document.getElementById("mobile-menu-close");
+
+  mobileNav.style.display = "none";
+  closeIcon.style.display = "none";
+  openIcon.style.display = "block";
+}
