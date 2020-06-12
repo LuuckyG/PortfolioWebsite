@@ -1,28 +1,17 @@
-<section id="contact" class="contact-section alt-background">
+<section id="contact" class="contact-section">
 
-    <div class="content-wrapper">    
-        <div class="contact-form-header">
-            <h3>Let's work together!</h3>
+    <div class="content-wrapper">
+
+        <div class="contact-icon-wrapper">
+            <i class="fa fa-paper-plane-o"></i>
         </div>
 
-        <form class="contact-form" method="POST" action="//formspree.io/{{site.data.settings.email}}">
-
-            <fieldset class="contact-info-wrapper">
-                <label><span>Your Name</span>
-                <input></label>
-    
-                <label><span>Your Email</span>
-                <input></label>
-            </fieldset>            
-
-            <label><span>Tell me about your project</span>
-            <textarea></textarea></label>
-            
-            <div class="submit-wrapper">
-                <button type="submit">Send</button>
-            </div>
-
-        </form>
+        <div class="contact-info-wrapper">
+            <h3>Let's work together!</h3>
+            <p>If you have an idea for a project or just want to chat and brainstorm, please feel free to contact me!</p>
+            <a href="mailto:{{ site.data.settings.email }}"><button>Contact me!</button></a>
+        </div>
+        
     </div>
 
 </section>
