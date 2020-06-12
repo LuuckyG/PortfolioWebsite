@@ -1,11 +1,31 @@
 <header id=#header>
-    <div class="logo"><a href="{{ site.data.settings.url }}">{{ site.data.settings.logo }}</a></div>
 
-    <nav>
-        {% for item in site.data.settings.menu %}
-            <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
-        {% endfor %}
-    </nav>
+    <div class="top-page" id="top-page">
+       <div class="logo" id="logo-top"><a href="{{ site.data.settings.url }}">{{ site.data.settings.logo }}</a></div>
+
+        <nav id="navbar">
+            {% for item in site.data.settings.menu %}
+                <a class="nav-links" href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+            {% endfor %}
+        </nav>
+
+        <div class="navbar-mobile" id="navbar-mobile">
+            <a id="mobile-menu" href="javascript:void(0);" class="icon" onclick="openmobileNavbar()">
+                <i class="fa fa-navicon"></i>
+            </a>
+
+            <a id="mobile-menu-close" href="javascript:void(0);" class="icon" onclick="closemobileNavbar()">
+                <i class="fa fa-close"></i>
+            </a>
+            
+            <div class="mobile-links" id="mobile-links">
+                {% for item in site.data.settings.menu %}
+                    <a class="nav-links" href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+                {% endfor %}
+            </div>
+        </div>
+
+    </div>
 
     <div class="header-title">
         <h1><span>{{ site.data.settings.title }}</span></h1>

@@ -1,7 +1,7 @@
 footer
     background-color: #222
     color: white
-    padding: 20px 20px 0 20px
+    padding: 10px 20px
     display: flex
     flex-wrap: wrap
     justify-content: space-between
@@ -9,31 +9,21 @@ footer
 .footer-wrapper
     order: 1
     text-align: left
-    margin: 10px
+    margin: 0 10px 10px 10px
+    display: flex
+    align-items: center
     
     .logo
         height: 50px
         width: 50px
         display: flex
-        float: left
         margin: 0 30px
         align-items: center
-    
-    .nav-item
-        display: inline-block
-        text-decoration: none
-        color: white
-        margin-right: 10px
-
-        &:last-child
-            margin-right: 0
-        
-    a, #copyright
-            text-transform: uppercase
-    
+            
     #copyright
+        text-transform: uppercase
         text-align: left
-    
+
 .socials
     order: 2
     align-content: center
@@ -82,17 +72,7 @@ footer
         .footer-wrapper
             margin: 0
             padding: 0
-
-            .nav-item
-                display: none
-
-            .logo
-                margin: 0 0 10px 0
-
-            #copyright
-                float: right
-                text-align: right
-                padding-top: 10px
+            justify-content: center
 
     .socials
         margin: 0
