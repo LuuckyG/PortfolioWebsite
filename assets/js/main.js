@@ -4,6 +4,31 @@ $(document).ready(function(){
   closemobileNavbar()
 });
 
+// $(function() {
+//   var $body = $('body');
+//   $body.on('click', function(event) {
+//     var clickedOutside = $(event.target).closest('.menu-toggle').length == 0;
+//     if (clickedOutside && $body.hasClass('menu-open')) {
+//       $body.removeClass('menu-open');
+//     }
+// });
+// }
+
+
+$(function() {
+  window.addEventListener(
+    'resize', 
+    function() {
+      var width = $(window).width();
+      $("resize-icon").css({
+          "height": width * 0.05
+      });
+    });
+
+})
+
+
+
 $(function() {
   window.addEventListener(
     'scroll',

@@ -62,12 +62,9 @@ header
 
 
 @media screen and ( max-width:  600px)
-    #mobile-menu
-        padding: 15px
 
     #mobile-menu-close
-        display: none
-        padding: 5px 15px
+        display: none    
 
     header
         position: relative
@@ -94,12 +91,14 @@ header
                 position: absolute
                 right: 0
                 top: 0
+                padding: 15px
 
                 &:hover,
                     color: lighten(#0074D9, 20%)
                 
             .mobile-links
                 display: none
+                box-shadow: -5px 5px 40px 5px rgba(0,0,0,0.5)
                 font-size: 14px
                 text-align: center
                 background-color: $white
@@ -109,7 +108,6 @@ header
                 top: 0
                 padding: 80px 30px 30px 30px
                 margin: 0
-                border: 1px solid #222
 
                 .nav-links
                     width: 100%
