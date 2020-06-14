@@ -1,22 +1,36 @@
-<section id="skills" class="skills-section">
+<section id="skills" class="skills-section alt-background">
 
     <div class="content-wrapper">
-        <div class="skills">
-            <p>My main skills:</p>
-            {% for skill in site.data.settings.skills %}
-                <button>{{skill.name}}</button>
-            {% endfor %} 
+        <div class="skills-content">
+            
+            <div class="skills">
+                <i class="fa fa-trophy"></i>
+                <h4>Main skills</h4>
+                <div class="skills-list">
+                    {% for skill in site.data.settings.skills %}
+                        <div class="skill-icon resize-icon">
+                            <i class="fa {{ skill.icon }}" style="color:{{ skill.color }}"></i>
+                            <p>{{ skill.name }}</p>
+                        </div>
+                    {% endfor %}  
+                </div>
+                
+            </div>
+            
+            <div class="technologies">
+                <i class="fa fa-mortar-board"></i>
+                <h4>I have experience with</h4>
+                <div class="tech-list">
+                    {% for tech in site.data.settings.technologies %}
+                        <div class="tech-icon resize-icon">
+                            <img class="resize-icon" src="assets/img/technologies/{{ tech.location }}" alt="{{ tech.name }}" height="50px">
+                        </div>
+                    {% endfor %} 
+                </div>
+                
+            </div>
         </div>
         
-        <div class="technologies">
-            <p>Technologies and Frameworks were I am familiar and worked with, include:</p>
-            {% for tech in site.data.settings.technologies %}
-                <button>{{tech.name}}</button>
-            {% endfor %}
-            {% for f in site.data.settings.frameworks %}
-                <button>{{f.name}}</button>
-            {% endfor %}
-        </div>
     </div>
     
 </section>

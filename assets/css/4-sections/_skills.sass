@@ -1,7 +1,96 @@
 .skills-section
+    padding-top: 30px
 
-    .skills, .technologies
-        margin: 20px auto
+    .skills-content
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        column-gap: 10%
+        padding: 20px 0
+        color: #222
 
-        p 
-            margin-bottom: 0
+        i
+            font-size: 40px
+
+        .skills, .technologies
+            margin: 0 auto
+            
+            p 
+                margin-bottom: 0
+            
+            button
+                margin: 5px auto
+        
+        .skills
+            grid-column: 1
+
+            .skills-list
+                display: grid
+                grid-template-columns: repeat(3, 1fr)
+                grid-gap: 1rem
+                grid-column-gap: 20px
+                text-align: center
+
+                .skill-icon
+                    height: 5%
+
+                    p
+                        margin: auto
+                        width: 80%
+        
+        .technologies
+            grid-column: 2/4
+
+            .tech-list
+                display: grid
+                grid-template-columns: repeat(4, 1fr)
+                grid-gap: 1rem
+                grid-column-gap: 20px
+                text-align: center
+
+                .tech-icon
+                    height: 5%
+
+
+
+@media screen and ( max-width: 992px )
+    
+    .skills-section
+
+        .content-wrapper
+            padding-top: 10px
+    
+            .skills-content
+                grid-template-columns: repeat(1, 1fr)
+                grid-gap: 2rem
+
+                .skills, .technologies
+                    grid-column: 1
+
+                .technologies
+                    .tech-list
+                        .tech-icon
+                            img
+                                height: 30px
+            
+
+
+
+@media screen and ( max-width: 600px )
+    
+    .skills-section
+
+        .skills-content
+            display: flex
+            flex-wrap: wrap
+
+            .skills
+
+                .skills-list
+                    display: grid
+                    grid-template-columns: repeat(2, 1fr)
+                    grid-gap: 1rem
+                    grid-column-gap: 20px
+                    text-align: center
+
+            .technologies
+                padding-top: 30px

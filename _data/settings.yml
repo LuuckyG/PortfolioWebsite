@@ -30,35 +30,49 @@ about_me:
 
 
 skills:
-- {name: Data Analytics, proficiency: 10}
-- {name: Machine Learning, proficiency: 8}
-- {name: Medical Physics, proficiency: 9}
-- {name: Software Development, proficiency: 8}
-- {name: Project Management, proficiency: 8}
-- {name: Teamwork, proficiency: 9}
+- {name: Data Analytics, proficiency: 10, icon: "fa-pie-chart", color: "purple"}
+- {name: Machine Learning, proficiency: 8, icon: "fa-cogs", color: "#222"}
+- {name: Medical Physics, proficiency: 9, icon: "fa-heartbeat", color: "red"}
+- {name: Software Development, proficiency: 8, icon: "fa-code-fork", color: "blue"}
+- {name: Project Management, proficiency: 8, icon: "fa-calendar-check-o", color: "orange"}
+- {name: Teamwork, proficiency: 9, icon: "fa-comments-o", color: "green"}
 
 
-languages:
-- {name: Python, proficiency: 9}
-- {name: SQL, proficiency: 8}
-- {name: CSS, proficiency: 8}
-- {name: HTML, proficiency: 8}
-- {name: JavaScript, proficiency: 8}
-- {name: C, proficiency: 7}
-- {name: Matlab, proficiency: 7}
-- {name: Microsoft, proficiency: 8}
-- {name: Linux, proficiency: 8}
-- {name: CLI, proficiency: 8}
-- {name: Heroku, proficiency: 7}
-- {name: Jekyll, proficiency: 7}
+technologies:
+- {name: Python, proficiency: 9, location: 'python.svg'}
+- {name: Tensorflow, proficiency: 8, location: 'tensorflow.svg'}
+- {name: PyTorch, proficiency: 8, location: 'pytorch.svg'}
+- {name: Flask, proficiency: 8, location: 'flask.svg'}
+- {name: CSS, proficiency: 8, location: 'css.png'}
+- {name: HTML, proficiency: 8, location: 'html.svg'}
+- {name: JavaScript, proficiency: 8, location: 'javascript.svg'}
+- {name: jquery, proficiency: 8, location: 'jquery.gif'}
+- {name: SASS, proficiency: 8, location: 'sass.svg'}
+- {name: Bootstrap, proficiency: 8, location: 'bootstrap.svg'}
+- {name: java, proficiency: 8, location: 'java.svg'}
+- {name: 'C++', proficiency: 7, location: 'cplus.svg'}
+- {name: postgresql, proficiency: 8, location: 'postgresql2.svg'}
+- {name: Matlab, proficiency: 7, location: 'matlab.svg'}
+- {name: Heroku, proficiency: 7, location: 'heroku.svg'}
+- {name: Jekyll, proficiency: 7, location: 'jekyll.svg'}
+- {name: github, proficiency: 8, location: 'github.svg'}
+- {name: git, proficiency: 8, location: 'git.svg'}
+- {name: Windows, proficiency: 8, location: 'windows.svg'}
+- {name: Linux, proficiency: 8, location: 'linux.svg'}
+- {name: bitbucket, proficiency: 8, location: 'bitbucket.svg'}
+- {name: sourcetree, proficiency: 8, location: 'sourcetree.svg'}
 
 
-frameworks:
-- {name: Tensorflow, proficiency: 8}
-- {name: PyTorch, proficiency: 8}
-- {name: Flask, proficiency: 8}
-- {name: Bootstrap, proficiency: 8}
-
+# - {name: django, proficiency: 8, location: 'django.svg'}
+# - {name: docker, proficiency: 8, location: 'docker.svg'}
+# - {name: gatsby, proficiency: 8, location: 'gatsby.svg'}
+# - {name: gatsby2, proficiency: 8, location: 'gatsby2.svg'}
+# - {name: gitlab, proficiency: 8, location: 'gitlab.svg'}
+# - {name: react, proficiency: 8, location: 'react.svg'}
+# - {name: sqlite, proficiency: 8, location: 'sqlite.svg'}
+# - {name: vue, proficiency: 8, location: 'vue.svg'}
+# - {name: angular, proficiency: 8, location: 'angular.svg'}
+# - {name: mongodb, proficiency: 8, location: 'mongodb.svg'}
 
 
 #-------------------------------
