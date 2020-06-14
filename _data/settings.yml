@@ -22,12 +22,11 @@ menu:
 # ---------------------
 # About Section
 about_me: 
-  - 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio doloremque nulla molestias molestiae, sequi consequatur 
-error quibusdam velit in maiores incidunt facilis sit accusantium labore, sed tempore dicta! Asperiores, commodi.
-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus consectetur laborum delectus fuga aperiam libero 
-et, eligendi animi itaque natus consequatur hic, minus asperiores deserunt labore impedit doloremque quasi unde?
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, illum obcaecati nam rerum provident tempora! 
-Non rerum minima ipsum reiciendis at exercitationem provident neque accusamus harum recusandae, aliquam veritatis qui.'
+  - 'Hi! I am Luuk, a self-taught programmer. Started by using Python for healthcare focussed Machine and Deep Learning projects. Currently, I focus on
+  web development and the development of web applications. Creating meaningful and fun projects for everyone to enjoy is what motivates me to keep creating and learning! 
+  <br><br>
+  Technologies I have been using recently: Python, Javascript, HTML, CSS, JQuery and SQL.
+  '
 
 
 skills:
