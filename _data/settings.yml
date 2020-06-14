@@ -47,6 +47,11 @@ languages:
 - {name: JavaScript, proficiency: 8}
 - {name: C, proficiency: 7}
 - {name: Matlab, proficiency: 7}
+- {name: Microsoft, proficiency: 8}
+- {name: Linux, proficiency: 8}
+- {name: CLI, proficiency: 8}
+- {name: Heroku, proficiency: 7}
+- {name: Jekyll, proficiency: 7}
 
 
 frameworks:
@@ -61,17 +66,42 @@ frameworks:
 # Work Section
 
 projects:
-- {name: WBSO Tool, description: blah blah}
-- {name: Attention-based Deep Learning, description: Very cool stuff}
-- {name: TYPO International Design Talks, description: Placeholder 1}
-- {name: City-IN website concept, description: Placeholder 2}
-- {name: Crispy Icons, description: Placeholder 3}
-- {name: Flat Mobile UI/UX Concept, description: Placeholder 4}
-- {name: Fresh It Up, description: Placeholder 5}
-- {name: Timeline Page, description: Placeholder 6}
-- {name: Weather Dashboard, description: Placeholder 7}
-# - {name: Stripes & Co, folder: 'proj-8', file: 'work/proj-8.html'}
-
+- {name: Smart Tender Analytics Tool,
+   folder: proj-1,
+   file: work/proj-1.html,
+   description: 'Work in progress. Goal: Web application enabling consultants to automatically write and instantly 
+                give feedback to clients, regarding their tender.', 
+   company: Evolvalor,
+   technologies: {'Python', 'CSS', 'HTML', 'JavaScript', 'Flask', 'SQL', 'Bootstrap'},
+   time: 'Sep 2019 - now'}
+- {name: Automatic Liver Segmentation Using Deep Learning,
+   folder: proj-2,
+   file: work/proj-2.html,
+   description: 'Minor Project. Researching the use of self-attention mechanisms for the segmentation of the liver in CT scans.', 
+   company: Quantib,
+   technologies: {'Python', 'Tensorflow', 'Numpy', 'Pandas'},
+   time: 'Sep 2019 - Jan 2020'}
+- {name: Stroke Detection Using Machine Learning,
+   folder: proj-3,
+   file: work/proj-3.html,
+   description: 'Graduation Project. Focussing on stroke detection using Graph Convolutional Neural Networks', 
+   company: AMC Amsterdam,
+   technologies: {'Python', 'Tensorflow'},
+   time: 'Jan 2019 - Jul 2019'}
+- {name: Portfolio Website,
+   folder: proj-4,
+   file: work/proj-4.html,
+   description: 'Building a responsive website using HTML, CSS, JavaScript, showcasing my skills and previous work.', 
+   company: 'MY OWN COMPANY',
+   technologies: {'HTML', 'SASS', 'JavaScript', 'JQuery', 'Jekyll'},
+   time: 'June 2020 - now'}
+- {name: Study of the Funding Landscape of Digital Health Innovations,
+   folder: proj-5,
+   file: work/proj-5.html,
+   description: 'Market landscape study of the digital health funding landscape.', 
+   company: Evolvalor,
+   technologies: {'Python'},
+   time: 'Jan 2018 - Jul 2018'}
 
 
 #-------------------------------
@@ -79,13 +109,17 @@ projects:
 
 clients:
 - {name: 'Scott Summers',
-  title: 'Director of Design, OnToText Ind.',
+  title: 'Director of Design',
+  company: OnToText Ind.,
+  img: 'SCOTT',
   quote: '<p><strong>While we all felt that Luuk was a great</strong> asset to our team — and really worked hard to understand our products from the point of view of the customer</p>',
-  logo: 'LOGO'}
+  logo: 'OnToText Ind.'}
 - {name: 'Hank McCoy',
-  title: 'Eater of Salad, Antartica Int.',
+  title: 'Eater of Salad',
+  company: Antartica Int.,
+  img: 'HANK',
   quote: '<p><strong>Working with Luuk was the highlight of my career.</strong></p>',
-  logo: 'LOGO'}
+  logo: 'Antartica Int'}
 
 
 

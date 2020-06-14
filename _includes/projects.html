@@ -2,14 +2,25 @@
 
     <div class="content-wrapper">
         <h3>Work</h3>
-        {% for project in site.data.settings.projects %}
-            <div class="project-card">
-                <div class="project-img">
-                    {{project.name}}
-                </div>
-                <p class="project-desc">{{ project.description }}</p>
-            </div>
-        {% endfor %} 
+        <div class="project-wrapper">
+            {% for project in site.data.settings.projects %}
+                <label for="{{ project.folder }}">
+                    <div class="project-card">
+                        <img class="project-img" width="600px" src="assets/img/work/{{ project.folder }}/thumb.jpg" alt="{{ project.name }}">
+                        <div class="project-overlay">
+                            <h4 class="project-title">{{ project.name }}</h4>
+                            <small>{{ project.time }}</small>
+                            <p class="project-desc">{{ project.description }}</p>
+                            <ul class="project-tech">
+                                {% for tech in project.technologies %}
+                                    <li><span><em>{{ tech }}</em></span></li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>    
+                </label>
+            {% endfor %}  
+        </div>
     </div>
 
 </section>
