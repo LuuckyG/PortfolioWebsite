@@ -1,14 +1,18 @@
 .about-section
     padding-top: 20px
     background-color: white
+    width: 50%
+    margin: auto
     
     .profile-image
         width: 300px
         height: 300px
         position: relative
-        margin: 0 auto
+        margin: 0 auto 10px auto
         overflow: hidden
         border-radius: 50%
+        border-bottom-left-radius: 0
+        box-shadow: -5px 5px 10px 5px rgba(0,0,0,0.5)
 
         img
             display: inline
@@ -21,5 +25,27 @@
         margin-bottom: 0
     
     p
+        text-align: center
         margin: 10px auto 30px auto
-        width: 50%
+        font-size: 16px
+        line-height: 1.6
+
+
+    
+@media screen and ( max-width: 600px )
+
+    .about-section
+
+        .profile-image
+            width: 200px
+            height: 200px
+            
+            img
+                display: inline
+                margin: 0 auto
+                height: 100%
+                width: auto
+                transform: translateX(-85px)
+
+        p
+            font-size: 12px

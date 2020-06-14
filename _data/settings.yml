@@ -22,8 +22,8 @@ menu:
 # ---------------------
 # About Section
 about_me: 
-  - 'Hi! I am Luuk, a self-taught programmer. Started by using Python for healthcare focussed Machine and Deep Learning projects. Currently, I focus on
-  web development and the development of web applications. Creating meaningful and fun projects for everyone to enjoy is what motivates me to keep creating and learning! 
+  - 'Hi! I am Luuk, a <em>self-taught programmer</em>. Started by using Python for <em>healthcare focussed</em> Machine and Deep Learning projects. Currently, I focus on
+  web development and the development of web applications. Creating <em>meaningful</em> and fun projects for everyone to enjoy is what motivates me to keep creating and learning! 
   <br><br>
   Technologies I have been using recently: Python, Javascript, HTML, CSS, JQuery and SQL.
   '
