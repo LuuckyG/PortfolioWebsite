@@ -22,11 +22,8 @@ menu:
 # ---------------------
 # About Section
 about_me: 
-  - 'Hi! I am Luuk, a <em>self-taught programmer</em>. Started by using Python for <em>healthcare focussed</em> Machine and Deep Learning projects. Currently, I focus on
-  web development and the development of web applications. Creating <em>meaningful</em> and fun projects for everyone to enjoy is what motivates me to keep creating and learning! 
-  <br><br>
-  Technologies I have been using recently: Python, Javascript, HTML, CSS, JQuery and SQL.
-  '
+  - 'Hi! I am Luuk, a <em>self-taught</em> programmer. Started by using Python for <em>healthcare focussed</em> Machine and Deep Learning projects. Currently, I focus on
+  web development and the development of web applications. Creating <em>meaningful</em> and fun projects for everyone to enjoy is what motivates me to keep creating and learning!'
 
 
 skills:
@@ -34,34 +31,34 @@ skills:
 - {name: Machine Learning, proficiency: 8, icon: "fa-cogs", color: "#222"}
 - {name: Medical Physics, proficiency: 9, icon: "fa-heartbeat", color: "red"}
 - {name: Software Development, proficiency: 8, icon: "fa-code-fork", color: "blue"}
-- {name: Project Management, proficiency: 8, icon: "fa-calendar-check-o", color: "orange"}
+- {name: Project Management, proficiency: 8, icon: "fa-calendar-check-o", color: "#f69c55"}
 - {name: Teamwork, proficiency: 9, icon: "fa-comments-o", color: "green"}
 
 
 technologies:
 - {name: Python, proficiency: 9, location: 'python.svg'}
 - {name: Tensorflow, proficiency: 8, location: 'tensorflow.svg'}
-- {name: PyTorch, proficiency: 8, location: 'pytorch.svg'}
 - {name: Flask, proficiency: 8, location: 'flask.svg'}
 - {name: CSS, proficiency: 8, location: 'css.png'}
 - {name: HTML, proficiency: 8, location: 'html.svg'}
-- {name: JavaScript, proficiency: 8, location: 'javascript.svg'}
-- {name: jquery, proficiency: 8, location: 'jquery.gif'}
+- {name: JavaScript, proficiency: 7, location: 'javascript.svg'}
+- {name: jquery, proficiency: 7, location: 'jquery.gif'}
 - {name: SASS, proficiency: 8, location: 'sass.svg'}
 - {name: Bootstrap, proficiency: 8, location: 'bootstrap.svg'}
-- {name: java, proficiency: 8, location: 'java.svg'}
+- {name: java, proficiency: 7, location: 'java.svg'}
 - {name: 'C++', proficiency: 7, location: 'cplus.svg'}
 - {name: postgresql, proficiency: 8, location: 'postgresql2.svg'}
 - {name: Matlab, proficiency: 7, location: 'matlab.svg'}
 - {name: Heroku, proficiency: 7, location: 'heroku.svg'}
 - {name: Jekyll, proficiency: 7, location: 'jekyll.svg'}
-- {name: github, proficiency: 8, location: 'github.svg'}
-- {name: git, proficiency: 8, location: 'git.svg'}
-- {name: Windows, proficiency: 8, location: 'windows.svg'}
+- {name: github, proficiency: 9, location: 'github.svg'}
+- {name: git, proficiency: 9, location: 'git.svg'}
 - {name: Linux, proficiency: 8, location: 'linux.svg'}
-- {name: bitbucket, proficiency: 8, location: 'bitbucket.svg'}
-- {name: sourcetree, proficiency: 8, location: 'sourcetree.svg'}
 
+# - {name: PyTorch, proficiency: 8, location: 'pytorch.svg'}
+# - {name: Windows, proficiency: 8, location: 'windows.svg'}
+# - {name: bitbucket, proficiency: 8, location: 'bitbucket.svg'}
+# - {name: sourcetree, proficiency: 8, location: 'sourcetree.svg'}
 
 # - {name: django, proficiency: 8, location: 'django.svg'}
 # - {name: docker, proficiency: 8, location: 'docker.svg'}
@@ -124,15 +121,21 @@ clients:
 - {name: 'Scott Summers',
   title: 'Director of Design',
   company: OnToText Ind.,
-  img: 'SCOTT',
-  quote: '<p><strong>While we all felt that Luuk was a great</strong> asset to our team — and really worked hard to understand our products from the point of view of the customer</p>',
-  logo: 'OnToText Ind.'}
+  img: 'anonymous.png',
+  quote: '<strong>While we all felt that Luuk was a great</strong> asset to our team — and really worked hard to understand our products from the point of view of the customer',
+  logo: 'evolvalor.png'}
 - {name: 'Hank McCoy',
   title: 'Eater of Salad',
   company: Antartica Int.,
-  img: 'HANK',
-  quote: '<p><strong>Working with Luuk was the highlight of my career.</strong></p>',
-  logo: 'Antartica Int'}
+  img: 'anonymous.png',
+  quote: '<strong>Working with Luuk was the highlight of my career.</strong>',
+  logo: 'quantib.png'}
+- {name: 'Hank McCoy',
+  title: 'Eater of Salad',
+  company: Antartica Int.,
+  img: 'anonymous.png',
+  quote: '<strong>Working with Luuk was the highlight of my career.</strong>',
+  logo: 'amsterdam_umc.png'}
 
 
 
