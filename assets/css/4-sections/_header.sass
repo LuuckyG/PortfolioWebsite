@@ -53,7 +53,12 @@ header
     
     a
         color: #222
-        
+    
+        &:hover
+            cursor: pointer
+            animation: grow 1s infinite alternate
+
+
 
 @media screen and ( max-width:  992px)
     header
@@ -103,6 +108,7 @@ header
                 text-align: center
                 background-color: $white
                 width: 100%
+                z-index: 5
                 position: relative
                 right: 0
                 top: 0
