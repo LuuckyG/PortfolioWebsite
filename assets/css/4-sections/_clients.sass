@@ -11,7 +11,7 @@
                 display: grid
                 grid-template-columns: repeat(3, 1fr)
                 grid-column-gap: 0px
-                justify-content: space-evenly;
+                justify-content: space-evenly
                 grid-column: 1
 
                 .client-info
@@ -36,10 +36,6 @@
                         top: 0
                         left: 10%
                         color: rgba(245, 184, 70, 0.191)
-                
-                &:not(:first-child)
-                    display: none
-
 
             .client-logos
                 display: flex
@@ -52,11 +48,13 @@
                     filter: grayscale(100%)
                     transition: all .3s ease-in-out
 
-                    .active,
                     &:hover,
                     &:focus
                         cursor: pointer
                         filter: grayscale(0%)
+                    
+                .active
+                    filter: grayscale(0%)
                 
             .client-btns
                 display: none
@@ -68,11 +66,14 @@
                     color: #222
                     padding: 0 10px
 
-                    .active,
                     &:hover,
                     &:focus
-                        cursor: pointer
                         color: rgba(245, 184, 70, 0.8)
+                        cursor: pointer
+
+                .active
+                    color: rgba(245, 184, 70, 0.8)
+                    
         
     .quote-left-click, .quote-right-click
         position: absolute
@@ -114,13 +115,6 @@
 @media screen and ( max-width: 660px )
     #clients > .content-wrapper > .clients-wrapper 
         .client-card 
-            display: flex
-            flex-wrap: wrap
-            flex-direction: column
-
-            &:not(:first-child)
-                display: none
-
             .client-info 
                 figure 
                     .client
