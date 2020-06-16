@@ -5,11 +5,11 @@
             
             <div class="skills">
                 <i class="fa fa-trophy"></i>
-                <h4>Main skills</h4>
+                <h4>My Strengths</h4>
                 <div class="skills-list">
                     {% for skill in site.data.settings.skills %}
-                        <div class="skill-icon resize-icon">
-                            <i class="fa {{ skill.icon }}" style="color:{{ skill.color }}"></i>
+                        <div class="skill-icon">
+                            <i class="fa {{ skill.icon }}" style="color: {{ skill.color }}"></i>
                             <p>{{ skill.name }}</p>
                         </div>
                     {% endfor %}  
@@ -22,8 +22,8 @@
                 <h4>I have experience with</h4>
                 <div class="tech-list">
                     {% for tech in site.data.settings.technologies %}
-                        <div class="tech-icon resize-icon">
-                            <img class="resize-icon" src="assets/img/technologies/{{ tech.location }}" alt="{{ tech.name }}" height="50px">
+                        <div class="tech-icon">
+                            <img src="assets/img/technologies/{{ tech.location }}" alt="{{ tech.name }}" title="{{ tech.name }}" height="50px">
                         </div>
                     {% endfor %} 
                 </div>

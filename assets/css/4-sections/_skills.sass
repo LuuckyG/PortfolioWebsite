@@ -1,4 +1,4 @@
-.skills-section
+#skills
     padding-top: 30px
 
     .skills-content
@@ -49,42 +49,39 @@
 
                 .tech-icon
                     height: 5%
+                    // filter: grayscale(100%)
+                    // transition: all .3s ease-in-out
+
+                    // &:hover
+                    //     filter: grayscale(0%)
 
 
 
 @media screen and ( max-width: 992px )
     
-    .skills-section
+    #skills > .content-wrapper
+        padding-top: 10px
 
-        .content-wrapper
-            padding-top: 10px
-    
-            .skills-content
-                grid-template-columns: repeat(1, 1fr)
-                grid-gap: 2rem
+        .skills-content
+            grid-template-columns: repeat(1, 1fr)
+            grid-gap: 2rem
 
-                .skills, .technologies
-                    grid-column: 1
+            .skills, .technologies
+                grid-column: 1
 
-                .technologies
-                    .tech-list
-                        .tech-icon
-                            img
-                                height: 30px
-            
+            .technologies
+                padding-top: 20px
 
 
 
 @media screen and ( max-width: 600px )
     
-    .skills-section
-
+    #skills > .content-wrapper
         .skills-content
             display: flex
             flex-wrap: wrap
 
-            .skills
-
+            .skills 
                 .skills-list
                     display: grid
                     grid-template-columns: repeat(2, 1fr)
@@ -93,4 +90,53 @@
                     text-align: center
 
             .technologies
-                padding-top: 30px
+                border-top: 1px solid #222 
+                padding-top: 20px
+                margin-top: 30px
+
+                .tech-list 
+                    .tech-icon 
+                        img
+                            height: 30px
+
+
+
+@media screen and ( max-width: 400px )
+    
+    #skills
+        .content-wrapper
+            .skills-content
+                display: flex
+                flex-wrap: wrap
+
+            .skills
+                h4
+                    font-size: 16px
+
+                .skills-list
+                    display: grid
+                    grid-template-columns: repeat(2, 1fr)
+                    grid-gap: 1rem
+                    grid-column-gap: 20px
+                    text-align: center
+
+                    .skill-icon
+                        i
+                            font-size: 24px
+                        p
+                            font-size: 12px
+
+            .technologies
+                border-top: 1px solid #222 
+                padding-top: 20px
+                margin-top: 30px
+
+                h4
+                    font-size: 16px
+
+                .tech-list
+                    grid-template-columns: repeat(3, 1fr)
+                
+                    .tech-icon 
+                        img
+                            height: 30px
