@@ -55,22 +55,6 @@ technologies:
 - {name: git, proficiency: 9, location: 'git.svg'}
 - {name: Linux, proficiency: 8, location: 'linux.svg'}
 
-# - {name: PyTorch, proficiency: 8, location: 'pytorch.svg'}
-# - {name: Windows, proficiency: 8, location: 'windows.svg'}
-# - {name: bitbucket, proficiency: 8, location: 'bitbucket.svg'}
-# - {name: sourcetree, proficiency: 8, location: 'sourcetree.svg'}
-
-# - {name: django, proficiency: 8, location: 'django.svg'}
-# - {name: docker, proficiency: 8, location: 'docker.svg'}
-# - {name: gatsby, proficiency: 8, location: 'gatsby.svg'}
-# - {name: gatsby2, proficiency: 8, location: 'gatsby2.svg'}
-# - {name: gitlab, proficiency: 8, location: 'gitlab.svg'}
-# - {name: react, proficiency: 8, location: 'react.svg'}
-# - {name: sqlite, proficiency: 8, location: 'sqlite.svg'}
-# - {name: vue, proficiency: 8, location: 'vue.svg'}
-# - {name: angular, proficiency: 8, location: 'angular.svg'}
-# - {name: mongodb, proficiency: 8, location: 'mongodb.svg'}
-
 
 #-------------------------------
 # Work Section
