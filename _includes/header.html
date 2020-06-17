@@ -5,7 +5,7 @@
 
         <nav id="navbar">
             {% for item in site.data.settings.menu %}
-                <a class="nav-links" href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+                <a class="nav-link page-scroll" href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
             {% endfor %}
         </nav>
 
@@ -20,7 +20,7 @@
             
             <div class="mobile-links" id="mobile-links">
                 {% for item in site.data.settings.menu %}
-                    <a class="nav-links" href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+                    <a class="nav-link page-scroll" href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
                 {% endfor %}
             </div>
         </div>
@@ -33,7 +33,7 @@
     </div>
 
     <div class="header-down">
-        <a href="#about" class="fa fa-chevron-circle-down"></a>
+        <a href="#about" class="fa fa-chevron-circle-down page-scroll"></a>
     </div>
 
 </header>

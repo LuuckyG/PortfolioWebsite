@@ -1,8 +1,10 @@
 
 $(document).ready(function() {
-  openmobileNavbar()
-  closemobileNavbar()
-  autocloseMobileNavbar()
+  smoothScroll(1000);
+
+  openmobileNavbar();
+  closemobileNavbar();
+  autocloseMobileNavbar();
 });
 
 
@@ -58,8 +60,19 @@ function autocloseMobileNavbar() {
 });
 }
 
-function scrollTo() {
-  this.scollIntoView();
+
+function smoothScroll (duration) {
+	$('a.page-scroll').bind('click', function(event) {
+
+    var target = $( $(this).attr('href') );
+
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: target.offset().top
+        }, duration);
+    }
+	});
 }
 
 
