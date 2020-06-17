@@ -1,14 +1,4 @@
-
-$(document).ready(function() {
-  smoothScroll(1000);
-
-  openmobileNavbar();
-  closemobileNavbar();
-  autocloseMobileNavbar();
-});
-
-
-
+// Sticky navbar
 $(function() {
   window.addEventListener(
     'scroll',
@@ -26,6 +16,7 @@ $(function() {
 });
 
 
+// Mobile Navigation menu
 function openmobileNavbar() {
   var mobileNav = document.getElementById("mobile-links");
   var openIcon = document.getElementById("mobile-menu");
@@ -48,7 +39,7 @@ function closemobileNavbar() {
 }
 
 
-function autocloseMobileNavbar() {
+$(function autocloseMobileNavbar() {
   var $body = $('body');
   $body.on('click', function(event) {
     const displayStyle = document.getElementById('mobile-links').style.display;
@@ -58,10 +49,11 @@ function autocloseMobileNavbar() {
       closemobileNavbar();
     };
 });
-}
+});
 
 
-function smoothScroll (duration) {
+// Scrolling
+$(function () {
 	$('a.page-scroll').bind('click', function(event) {
 
     var target = $( $(this).attr('href') );
@@ -70,10 +62,10 @@ function smoothScroll (duration) {
         event.preventDefault();
         $('html, body').animate({
             scrollTop: target.offset().top
-        }, duration);
+        }, 1000);
     }
 	});
-}
+});
 
 
 // Client slideshow
