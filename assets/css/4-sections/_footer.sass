@@ -1,0 +1,94 @@
+footer
+    background-color: #222
+    color: white
+    padding: 10px 20px
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+.footer-wrapper
+    order: 1
+    text-align: left
+    margin: 0 10px 10px 10px
+    display: flex
+    align-items: center
+    
+    .logo
+        height: 50px
+        width: 50px
+        display: flex
+        margin: 0 30px
+        align-items: center
+            
+    #copyright
+        text-transform: uppercase
+        text-align: left
+
+.socials
+    order: 2
+    align-content: center
+    align-items: center
+    margin: 0px 100px 0 0
+    font-size: 24px
+    color: $silver
+
+    ul
+        margin: 5px 0 0 0
+        padding: 0
+
+        li
+            text-align: left
+            list-style-type: none
+            display: inline-block
+            margin-left: 15px
+            
+            a
+                color: $white
+                display: block
+
+                &:hover, 
+                &:focus
+                    color: lighten(#0074D9, 20%)
+
+    
+.footer-up
+    order: 3
+    position: absolute
+    left: 50%
+    padding-top: 60px
+    transform: translate(-50%, -50%)
+    font-size: 24px
+
+    a
+        color: $white
+    
+        &:hover 
+            animation: grow 1s infinite alternate
+
+
+
+@media screen and ( max-width: 992px ) 
+    footer
+        flex-direction: column-reverse
+        text-align: center
+        
+        .footer-wrapper
+            margin: 0
+            padding: 0
+            justify-content: center
+
+    .socials
+        margin: 0
+
+        ul
+            margin: 0 0 10px 0
+
+            li
+                    
+                &:nth-child(1)
+                    margin-left: 0
+                
+    .footer-up
+        position: relative
+        margin: 0 0 -30px 0
+        

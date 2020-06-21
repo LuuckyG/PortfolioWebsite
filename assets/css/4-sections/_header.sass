@@ -1,42 +1,130 @@
 header
     text-align: center
-    height: 250px
+    height: 100vh
     align-content: center
 
     .logo
-        height: 50px
-        width: 50px
         float: left
-        margin: 10px 0 0 30px
-        color: #111
+        padding-left: 20px
+        margin: auto
 
         a 
-            color: #111
-            
-            &:hover,
-            &:focus
-                color: lighten(#111, 20%)
+            font-size: 20px
+            text-transform: uppercase
+            text-decoration: underline
 
         path
         fill: rgba(0,0,0,0.4)
 
+    .navbar-mobile
+        display: none
+        
+        .mobile-links
+            display: none
+
     nav
         float: right
-        margin: 10px
+        padding: 20px 70px 10px 10px
 
-        a 
-            display: inline-block
-            text-decoration: none
-            color: #111111
-            margin-right: 10px
+    .nav-link
+        display: inline-block
+        text-transform: uppercase
+        text-decoration: none
+        color: #111111
+        margin-right: 10px
+
+        &:hover,
+        &:focus
+            color: lighten(#0074D9, 20%)
+
+.header-title
+    position: absolute
+    top: 50%
+    left: 50%
+    text-align: center
+    transform: translate(-50%, -50%)
 
     h1
-        margin: 20px
-        padding: 10px
-        clear: both
+        margin: 0
 
-        span
-            display: inline-block
-            padding: 0.2em 0.5em
-            border: red solid 10px
+.header-down
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 0
+    padding-bottom: 30px
+    font-size: 30px
     
+    a
+        color: #222
+    
+        &:hover
+            cursor: pointer
+            animation: grow 1s infinite alternate
+
+
+
+@media screen and ( max-width:  992px)
+    header
+        nav
+            padding: 20px
+
+
+@media screen and ( max-width:  600px)
+
+    #mobile-menu-close
+        display: none    
+
+    header
+        position: relative
+
+        nav
+            display: none
+        
+        .navbar-mobile
+            display: flex
+            flex-direction: row
+            visibility: visible
+            float: right
+            position: fixed
+            top: 0
+            right: 0
+            height: 100vh
+            font-size: 24px
+            text-align: right
+            color: #222
+            
+            a.icon
+                z-index: 10
+                color: #222
+                position: absolute
+                right: 0
+                top: 0
+                padding: 15px
+
+                &:hover,
+                    color: lighten(#0074D9, 20%)
+                
+            .mobile-links
+                display: none
+                box-shadow: -5px 5px 40px 5px rgba(0,0,0,0.5)
+                font-size: 14px
+                text-align: center
+                background-color: $white
+                width: 100%
+                z-index: 5
+                position: relative
+                right: 0
+                top: 0
+                padding: 80px 30px 30px 30px
+                margin: 0
+
+                .nav-link
+                    width: 100%
+                    margin: 0
+                    position: relative
+                    display: block
+
+                    &:hover,
+                    &:focus
+                        color: lighten(#0074D9, 20%)

@@ -1,0 +1,99 @@
+.project-wrapper
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-gap: 1rem
+    grid-column-gap: 20px
+    align-content: center
+    justify-content: center
+    padding-bottom: 100px
+    color: $white
+    
+
+    label
+        margin: 0
+        padding: 0
+        position: relative
+        display: flex
+        flex-direction: column
+        text-align: center
+        overflow: hidden
+        box-shadow: -5px 5px 10px 5px rgba(0,0,0,0.5)
+        transition: all .3s ease-in-out
+
+        .project-card
+            display: block
+            min-height: 360px
+            text-align: center
+            position: relative
+            transition: all 0.3s ease-in-out
+            
+            .project-img
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+
+            .project-overlay
+                display: flex
+                flex-direction: column
+                align-content: center
+                transition: all 0.3s
+                position: absolute
+                top: 0
+                left: 0
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                z-index: 1
+                width: 100%
+                height: 100%
+                opacity: 0
+                background-color: rgba(0,0,0,0.8)
+
+                .project-title, .project-desc, .project-tech
+                    width: 80%
+                
+                .project-title
+                    color: $white
+                    margin: 50px auto 0 auto
+
+                .project-desc
+                    margin: auto
+
+                .project-tech
+                    display: flex
+                    flex-wrap: wrap
+                    margin: auto
+                    list-style-type: disc
+
+                    li
+                        text-align: center
+                    
+                        span
+                            position: relative
+                            left: -5px
+                            padding-right: 20px
+
+                            li:last-child
+                                span
+                                    padding-right: 0
+
+        &:hover,
+        &:focus,
+            z-index: 2
+            transform: scale(1.03)
+
+            .project-overlay
+                opacity: 100
+
+
+
+@media screen and ( max-width: 992px )
+    .project-wrapper
+        grid-template-columns: repeat(2, 1fr)
+
+
+
+@media screen and ( max-width: 700px )
+    .project-wrapper
+        grid-template-columns: repeat(1, 1fr)

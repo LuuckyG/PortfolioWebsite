@@ -1,0 +1,50 @@
+<section id="clients" class="clients-section">
+
+    <div class="content-wrapper">
+        <h3>Clients</h3>
+        <div class="clients-wrapper">
+            <div class="slideshow-container">
+                {% for client in site.data.settings.clients %}
+                    <div class="client-card">
+                        <div class="client-info">
+                            <figure>
+                                <i class="fa fa-user-circle-o" style="font-size: 60px;"></i>
+                                <!-- <img src="assets/img/{{ client.img }}"> -->
+
+                                <p class="client">
+                                    <strong class="client-name">{{ client.name }}</strong><br>
+                                    <em class="client-title">{{ client.title }}, {{ client.company }}</em>
+                                </p>
+                            </figure>
+                        </div>
+
+                        <div class="client-quote-wrapper">
+                            <i class="fa fa-quote-left" style="font-size: 60px;" id="left-quote-mark"></i>
+                            <p class="client-quote">{{ client.quote }}</p>
+                        </div>
+                            
+                    </div>               
+                {% endfor %}
+            </div>
+            <div class="client-logos">
+                {% for client in site.data.settings.clients %}
+                    <div class="client-logo" id="{{ client.company }}-logo">
+                        <img src="assets/img/clients/{{ client.logo }}"
+                        alt="Logo of {{ client.company }}" 
+                        height="40px"
+                        onclick="currentClient('{{ forloop.index }}')">
+                    </div>
+                {% endfor %}        
+            </div>
+            <div class="client-btns">
+                {% for client in site.data.settings.clients %}
+                    <div class="client-btn" onclick="currentClient('{{ forloop.index }}')"><i class="fa fa-circle-o"></i></div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="quote-left-click" onclick="plusClients(-1)">&#10094;</div>
+    <div class="quote-right-click" onclick="plusClients(1)">&#10095;</div>
+
+</section>

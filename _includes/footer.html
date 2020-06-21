@@ -1,0 +1,27 @@
+<footer id=#footer>
+
+    <div class="footer-wrapper">
+        <!-- <div class="logo logo-white"><a href="{{ site.data.settings.url }}">{{ site.data.settings.logo }}</a></div> -->
+                
+        <p id="copyright"><small>Copyright <i class="fa fa-copyright"></i> {{ site.data.settings.name }} {{ site.time | date: '%Y' }}</small></p > 
+        
+    </div>
+    
+    <div class="socials">
+        <ul>
+            {% for social in site.data.settings.socials %}
+            <li>
+                
+                <a id="{{ social.icon-id }}"  href="{{ social.link }}" target="_blank">
+                   <i class="{{ social.class }}" aria-hidden="true"></i>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="footer-up">
+        <a href="#page-top" class="fa fa-chevron-circle-up page-scroll"></a>
+    </div>
+
+</footer>
