@@ -131,5 +131,5 @@ clients:
 # Social
 
 socials:
-  - {name: 'Github', icon-id: 'github', link: https://github.com/LuuckyG, class: "fa fa-github"}
+  - {name: 'Github', icon-id: 'github', link: 'https://github.com/LuuckyG', class: "fa fa-github"}
   - {name: 'LinkedIn', icon-id: 'linkedin' , link: 'https://www.linkedin.com/in/luuk-geelen-184806a9/', class: "fa fa-linkedin"}
