@@ -1,35 +1,24 @@
-<section id="skills" class="skills-section alt-background">
+<section id="skills" class="skills-section">
 
     <div class="content-wrapper">
-        <div class="skills-content">
-            
-            <div class="skills">
-                <i class="fa fa-trophy"></i>
-                <h4>My Strengths</h4>
-                <div class="skills-list">
-                    {% for skill in site.data.settings.skills %}
-                        <div class="skill-icon">
-                            <i class="fa {{ skill.icon }}" style="color: {{ skill.color }}"></i>
-                            <p>{{ skill.name }}</p>
-                        </div>
-                    {% endfor %}  
-                </div>
-                
+        <div class="skills-content">            
+            <i class="fa fa-mortar-board"></i>
+            <h4>I have experience with</h4>
+            <div class="tech-list">
+                {% for tech in site.data.settings.technologies %}
+                    <div class="tech-icon">
+                        <img src="assets/img/technologies/{{ tech.location }}" alt="{{ tech.name }}" title="{{ tech.name }}" height="50px">
+                    </div>
+                {% endfor %} 
             </div>
-            
-            <div class="technologies">
-                <i class="fa fa-mortar-board"></i>
-                <h4>I have experience with</h4>
-                <div class="tech-list">
-                    {% for tech in site.data.settings.technologies %}
-                        <div class="tech-icon">
-                            <img src="assets/img/technologies/{{ tech.location }}" alt="{{ tech.name }}" title="{{ tech.name }}" height="50px">
-                        </div>
-                    {% endfor %} 
-                </div>
-                
+
+            <div class="tech-list-text">
+                {% for tech in site.data.settings.technologies %}
+                    <p>{{ tech.name }}</p>
+                {% endfor %} 
             </div>
         </div>
+        
         
     </div>
     

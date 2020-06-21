@@ -5,7 +5,7 @@ name: Luuk Geelen
 title: Hi, I'm Luuk!
 description: Back End Python Engineer
 email: luuk.geelen@hotmail.com
-logo: LG
+logo: Luuk Geelen
 
 url: https://luuckyg.github.io/
 baseurl: ''
@@ -23,8 +23,8 @@ menu:
 # ---------------------
 # About Section
 about_me: 
-  - 'Hi! I am Luuk, a <em>self-taught</em> programmer. Started by using Python for <em>healthcare focussed</em> Machine and Deep Learning projects. Currently, I focus on
-  web development and the development of web applications. Creating <em>meaningful</em> and fun projects for everyone to enjoy is what motivates me to keep creating and learning!'
+  - 'Hi! I am Luuk, a <em>self-taught</em> programmer. Started by using Python for <em>healthcare focussed</em> Machine and Deep Learning projects. I currently focus on
+  the development of <em>web applications</em>. Creating <em>meaningful</em> and fun projects for everyone to enjoy is what motivates me to keep creating and learning!'
 
 
 skills:
@@ -63,7 +63,8 @@ technologies:
 projects:
 - {name: Smart Tender Analytics Tool,
    folder: proj-1,
-   file: work/proj-1.html,
+   link-icon: "fa fa-external-link",
+   link: mkbfinancieringshulp.herokuapp.com,
    description: 'Work in progress. Goal: Web application enabling consultants to automatically write and instantly 
                 give feedback to clients, regarding their tender.', 
    company: Evolvalor,
@@ -71,28 +72,32 @@ projects:
    time: 'Sep 2019 - now'}
 - {name: Automatic Liver Segmentation Using Deep Learning,
    folder: proj-2,
-   file: work/proj-2.html,
+   link-icon: "",
+   link: "",
    description: 'Minor Project. Researching the use of self-attention mechanisms for the segmentation of the liver in CT scans.', 
    company: Quantib,
    technologies: {'Python', 'Tensorflow', 'Numpy', 'Pandas'},
    time: 'Sep 2019 - Jan 2020'}
 - {name: Stroke Detection Using Machine Learning,
    folder: proj-3,
-   file: work/proj-3.html,
+   link-icon: "",
+   link: "",
    description: 'Graduation Project. Focussing on stroke detection using Graph Convolutional Neural Networks', 
    company: AMC Amsterdam,
    technologies: {'Python', 'Tensorflow'},
    time: 'Jan 2019 - Jul 2019'}
 - {name: Portfolio Website,
    folder: proj-4,
-   file: work/proj-4.html,
+   link-icon: "",
+   link: ,
    description: 'Building a responsive website using HTML, CSS, JavaScript, showcasing my skills and previous work.', 
    company: 'MY OWN COMPANY',
    technologies: {'HTML', 'SASS', 'JavaScript', 'JQuery', 'Jekyll'},
    time: 'June 2020 - now'}
 - {name: Study of the Funding Landscape of Digital Health Innovations,
    folder: proj-5,
-   file: work/proj-5.html,
+   link-icon: "",
+   link: "#",
    description: 'Market landscape study of the digital health funding landscape.', 
    company: Evolvalor,
    technologies: {'Python'},
@@ -103,23 +108,24 @@ projects:
 # Clients Section
 
 clients:
-- {name: 'Scott Summers',
-  title: 'Director of Design',
-  company: OnToText Ind.,
+- {name: 'Mr. K',
+  title: 'Co-Founder',
+  company: evolvalor,
   img: 'anonymous.png',
-  quote: '<strong>While we all felt that Luuk was a great</strong> asset to our team — and really worked hard to understand our products from the point of view of the customer',
+  quote: 'We all felt that Luuk was a <strong>great asset to our team</strong> — and really worked hard to understand our products from the point of view of the customer',
   logo: 'evolvalor.png'}
-- {name: 'Hank McCoy',
-  title: 'Eater of Salad',
-  company: Antartica Int.,
+- {name: 'Mr. J',
+  title: 'CTO',
+  company: Quantib BV,
   img: 'anonymous.png',
-  quote: '<strong>Working with Luuk was the highlight of my career.</strong>',
+  quote: 'Working with Luuk was a great experience. He showed great commitment to our product and not only delivered what we wanted, 
+  he also went the extra mile and <strong>the end result was better than we could ever dream of!</strong>',
   logo: 'quantib.png'}
-- {name: 'Hank McCoy',
-  title: 'Eater of Salad',
-  company: Antartica Int.,
+- {name: 'Ms. M',
+  title: 'Supervisor',
+  company: Amsterdam AMC,
   img: 'anonymous.png',
-  quote: '<strong>Working with Luuk was the highlight of my career.</strong>',
+  quote: 'Luuk showed a <strong>great willingness to learn and develop </strong> himself. This dedication was really noticable in the end result.',
   logo: 'amsterdam_umc.png'}
 
 

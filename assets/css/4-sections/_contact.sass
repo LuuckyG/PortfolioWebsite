@@ -2,12 +2,13 @@
     display: flex
     margin: 0 auto
     text-align: center
+    color: $white
 
 
 .contact-icon-wrapper
     padding-top: 20px
     font-size: 50px
-    color: #222
+    color: $white
 
 .contact-info-wrapper
     width: 30%
@@ -15,11 +16,24 @@
     padding-bottom: 50px
 
     h3
+        color: $white
         margin-bottom: 0
 
     p
         margin: auto
         padding-bottom: 30px
+
+    a
+        button
+            color: $blue
+            background-color: $white
+
+            &:hover,
+            &:focus
+                color: $white
+                background-color: $blue
+            
+
 
 @media screen and ( max-width: 900px)
     .contact-info-wrapper

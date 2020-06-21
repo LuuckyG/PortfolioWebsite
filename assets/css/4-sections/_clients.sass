@@ -1,4 +1,4 @@
-.clients-section
+#clients
     position: relative
     height: 600px
 
@@ -37,7 +37,7 @@
                         position: absolute
                         top: 0
                         left: 10%
-                        color: rgba(245, 184, 70, 0.191)
+                        color: rgba(0, 116, 217, 0.191)
 
             .client-logos
                 display: flex
@@ -70,11 +70,11 @@
 
                     &:hover,
                     &:focus
-                        color: rgba(245, 184, 70, 0.8)
+                        color: rgba(0, 116, 217, 0.8)
                         cursor: pointer
 
                 .active
-                    color: rgba(245, 184, 70, 0.8)
+                    color: rgba(0, 116, 217, 0.8)
                     
         
     .quote-left-click, .quote-right-click
@@ -85,7 +85,7 @@
 
         &:hover
             cursor: pointer
-            color: rgba(245, 184, 70, 0.8)
+            color: rgba(0, 116, 217, 0.8)
     
     .quote-left-click
         left: 10%
@@ -134,6 +134,7 @@
 
 @media screen and ( max-width: 400px )
     #clients
+        height: 700px
 
         .quote-left-click, .quote-right-click
             font-size: 16px
@@ -148,3 +149,8 @@
                 .client-quote-wrapper
                     .client-quote
                         font-size: 14px
+
+
+@media screen and ( max-width: 240px )
+    #clients
+        height: 800px

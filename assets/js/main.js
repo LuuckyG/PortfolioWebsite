@@ -68,6 +68,38 @@ $(function () {
 });
 
 
+// Project modals
+$(function () {
+  $('div.project-overlay').click(function(event) {
+
+    var $content = $(this).attr('href')
+    var $htmlContent = $.get($content.html);
+
+    console.log($htmlContent)
+
+});
+});
+
+
+// $(function () {
+//   $('div.project-overlay').bind('click', function(event) {
+//     console.log(this);
+//     console.log($(this).parent);
+
+    // this.load($(this).file, function() {
+    //   $(this).dialog('open');
+    // });
+
+    // $.ajax({
+    //   url = this.file,
+    //   success = function(data) {
+    //     $(this).open(data)
+    //   }
+    // });
+//   });
+// });
+
+
 // Client slideshow
 var clientIndex = 1;
 var clientInterval = 4000;
