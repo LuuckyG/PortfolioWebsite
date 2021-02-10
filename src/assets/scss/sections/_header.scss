@@ -1,10 +1,16 @@
 header {
 
-        .container {
-            display: block;
-            position: relative;
-            height: 90px;
-            color: $black;
+    .container {
+        display: block;
+        position: relative;
+        height: 90px;
+        color: $blackgrey;
+
+        .bg {
+            background-image: url('../img/header.JPG');
+            background-size: cover;
+            background-repeat: no-repeat;
+            }
 
         .logo {
             position: absolute;
@@ -15,7 +21,7 @@ header {
             font-weight: 800;
 
             a {
-                color: $black;
+                color: $blackgrey;
                 text-transform: uppercase;
                 font-weight: 600;
             }
@@ -43,11 +49,20 @@ header {
                 }
 
                 a {
-                    color: $black;
+                    color: $blackgrey;
                     text-transform: uppercase;
                     font-weight: 600;
+
+                    &:hover {
+                        color: $red;
+                        @include transition(0.3s ease-in-out);
+                    }
+                
+                    &.current {
+                        color: $red;
+                    }
                 }
-            }
+           }
         }
     }
 }

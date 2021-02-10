@@ -4,9 +4,15 @@ import React from 'react';
 import Intro from '../introComponent/intro';
 
 
-function Homepage() {
-  return (
-    <div className="container-fluid">
+class Homepage extends React.Component {
+  
+  constructor() {
+    super();
+    this.state = {};
+  }
+
+  render() {
+    return <div className="container-fluid">
 
       <Intro />
 
@@ -17,7 +23,7 @@ function Homepage() {
         </div>
       </main>
     </div>
-  );
+  }
 }
 
 export default Homepage;

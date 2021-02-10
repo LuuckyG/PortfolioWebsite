@@ -5,9 +5,9 @@ function Footer() {
   return (
 
     <footer>
-
-      Footer
-
+      <div className="container-fluid center">
+        <small> Copyright © Luuk Geelen 2021 </small>
+      </div>
     </footer>
 
   );
