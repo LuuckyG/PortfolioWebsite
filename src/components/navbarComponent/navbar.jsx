@@ -7,15 +7,7 @@ class NavBar extends React.Component {
         super();
         this.state = {};
     }
-        
-    componentDidMount () {
-        
-    }
-    
-    componentDidUnmount () {
-    
-    }
-  
+      
     render() {
         return ( 
             <nav >
