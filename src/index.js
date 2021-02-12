@@ -1,31 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import ReactDOM from 'react-dom'
+import registerServiceWorker from './registerServiceWorker'
+import { BrowserRouter as Router } from 'react-router-dom'
+import App from './App'
+import * as contentful from 'contentful'
+import './assets/css/style.css'
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+var client = contentful.createClient({
+  space: process.env.REACT_APP_SPACE_ID,
+  accessToken: process.env.REACT_APP_ACCESS_TOKEN
+});
 
-// const path = require('path');
-// const express = require('express');
-// const app = new express();
- 
-// app.get('/', (req, res) => {
-//     res.sendFile(path.resolve(__dirname, 'components/pages/homepage.jsx'));
-// });
+client.getEntries().then(entries => {
+  entries.items.forEach(entry => {
+    if(entry.fields) {
+      console.log(entry.fields)
+    }
+  })
+})
 
-// app.get('/blogs', (req, res) => {
-//     res.sendFile(path.resolve(__dirname, 'components/pages/blogs.jsx'));
-// });
-
-// app.get('/tutorials', (req, res) => {
-//     res.sendFile(path.resolve(__dirname, 'components/pages/tutorials.jsx'));
-// });
-
-
-// app.use(express.static('public'));
- 
-// app.listen(4000, () => {
-//     console.log('App listening on port 4000')
-// });
-
+ReactDOM.render((
+  <Router>
+    <App />
+  </Router>
+), document.getElementById('root'))
+registerServiceWorker()
