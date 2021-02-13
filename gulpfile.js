@@ -9,6 +9,7 @@ var sass = require('gulp-sass');
 // Paths
 var SCSS_SRC = './src/assets/scss/**/*.scss';
 var SCSS_DEST = './src/assets/css';
+var SCSS_PUBLIC_DEST = './public';
 
 
 function minifyCSS() {
@@ -23,6 +24,7 @@ function minifyCSS() {
           }))
       .pipe(cleanCSS())
       .pipe(gulp.dest(SCSS_DEST))
+      .pipe(gulp.dest(SCSS_PUBLIC_DEST))
   );
 }
 

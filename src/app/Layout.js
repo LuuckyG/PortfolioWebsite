@@ -8,6 +8,7 @@ import Content from './layout/Content'
 import Footer from './layout/Footer'
 import Router from './layout/Router'
 
+
 const Layout = ({ children }) => (
   <Site>
     <Helmet
@@ -22,7 +23,7 @@ const Layout = ({ children }) => (
       link={[
         {'rel':'stylesheet', 'href': 'https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css'},
         {'rel':'stylesheet', 'href': "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css", 'integrity':"sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1", 'crossOrigin':'anonymous'},
-        {'rel':'stylesheet', 'href': '../assets/css/style.css'}
+        {'rel':'stylesheet', 'href': './style.css'}
       ]}
     />
     <Header />

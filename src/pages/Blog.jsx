@@ -32,15 +32,15 @@ class Blog extends React.Component {
       .catch(console.error)
   }
 
-  componentDidUnmount () {
+  componentWillUnmount () {
     removeScript("/assets/js/clean-blog.min.js")
   }
 
   render() {
-    if (!this.state.posts.length) return <div className="container-fluid mx-auto"><p>No posts found.</p></div>
+    if (!this.state.posts.length) return <div className="container mx-auto"><p>No posts found.</p></div>
 
     return (
-      <div className="container-fluid">
+      <div className="container">
         <p>This is the Blog Page</p>
         { this.state.posts.map(({fields}, i) =>
           <BlogItem key={i} {...fields} />

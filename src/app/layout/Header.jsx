@@ -61,6 +61,16 @@ class Header extends React.Component {
                 </span>
                 Code Blog
               </NavLink>
+              <NavLink
+                className="navbar-item"
+                to="/projects"
+                activeClassName="is-active"
+              >
+                <span className="icon has-text-primary" style={{ marginRight: 5 }}>
+                <i className="fas fa-chart-line"></i>
+                </span>
+                Projects
+              </NavLink>
             <div className="navbar-item has-dropdown is-hoverable">
               <NavLink
                   className="navbar-item"
@@ -70,9 +80,9 @@ class Header extends React.Component {
                   <span className="icon has-text-primary" style={{ marginRight: 5 }}>
                     <i className="fas fa-book"></i>
                   </span>
-                  Courses <a><span className="icon has-text-primary" style={{ marginRight: 5 }}>
+                  Courses <span className="icon has-text-primary" style={{ marginRight: 5 }}>
                     <i className="fas fa-sort-down" style={{ marginLeft: 3 }}></i>
-                  </span></a>
+                  </span>
               </NavLink>
               <div className="navbar-dropdown">
                 <NavLink
@@ -88,6 +98,15 @@ class Header extends React.Component {
             </div>
           </div>
           <div className="navbar-end">
+            <NavLink
+              className="navbar-item"
+              to="/contact"
+              activeClassName="is-active"
+            >
+              <span className="icon has-text-primary" style={{ marginRight: 5 }}>
+              <i className="fas fa-envelope"></i>
+              </span>
+            </NavLink>
             <a className="navbar-item" href="https://github.com/LuuckyG">
               <span className="icon">
                 <i className="fab fa-lg fa-github"></i>
