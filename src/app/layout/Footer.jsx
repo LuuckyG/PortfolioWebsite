@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => (
   <footer className="footer">
-       <div className="container-fluid center">
+       <div className="center">
          <small> Copyright © Luuk Geelen 2021 </small>
     </div>
   </footer>

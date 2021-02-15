@@ -1,0 +1,21 @@
+.navbar-item {
+    text-decoration: none;
+    @include transition(.3s ease-in-out);
+    cursor: pointer;
+
+    &:hover {
+        color: $red;
+        @include transition(0.3s ease-in-out);
+    }
+}
+
+.navbar-link.is-active, 
+.navbar-link:focus, 
+.navbar-link:focus-within, 
+.navbar-link:hover, 
+a.navbar-item.is-active, 
+a.navbar-item:focus, 
+a.navbar-item:focus-within,
+a.navbar-item:hover {
+    background-color: #f3f3f3;
+}

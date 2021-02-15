@@ -25,20 +25,19 @@ class Header extends React.Component {
             borderBottom: 'solid 1px #dddddd',
           }}>
         <div className="container">
-        <div className="navbar-brand logo">
-          <NavLink
-              className="navbar-item"
-              to="/"
-              activeClassName="is-active"
-            >
-            <span>Luuk Geelen</span>
-          </NavLink>
-          <button className="button navbar-burger" onClick={this.toggleNav}>
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </div>
+          <div className="navbar-brand logo">
+            <NavLink
+                className='navbar-item'
+                to="/"
+              >
+              <span><b>Luuk Geelen</b></span>
+            </NavLink>
+            <button className="button navbar-burger" onClick={this.toggleNav}>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
         <div className={ this.state.isActive ? 'navbar-menu is-active' : 'navbar-menu'}>
           <div className="navbar-start">
               <NavLink
@@ -46,7 +45,7 @@ class Header extends React.Component {
                 to="/about"
                 activeClassName="is-active"
               >
-                <span className="icon has-text-primary" style={{ marginRight: 5 }}>
+                <span className="icon has-text-link" style={{ marginRight: 5 }}>
                   <i className="fas fa-user-circle"></i>
                 </span>
                 About Me
@@ -56,7 +55,7 @@ class Header extends React.Component {
                 to="/blog"
                 activeClassName="is-active"
               >
-                <span className="icon has-text-primary" style={{ marginRight: 5 }}>
+                <span className="icon has-text-link" style={{ marginRight: 5 }}>
                 <i className="fas fa-code"></i>
                 </span>
                 Code Blog
@@ -66,7 +65,7 @@ class Header extends React.Component {
                 to="/projects"
                 activeClassName="is-active"
               >
-                <span className="icon has-text-primary" style={{ marginRight: 5 }}>
+                <span className="icon has-text-link" style={{ marginRight: 5 }}>
                 <i className="fas fa-chart-line"></i>
                 </span>
                 Projects
@@ -77,10 +76,10 @@ class Header extends React.Component {
                   to="/courses"
                   activeClassName="is-active"
                 >
-                  <span className="icon has-text-primary" style={{ marginRight: 5 }}>
+                  <span className="icon has-text-link" style={{ marginRight: 5 }}>
                     <i className="fas fa-book"></i>
                   </span>
-                  Courses <span className="icon has-text-primary" style={{ marginRight: 5 }}>
+                  Courses <span className="icon has-text-link">
                     <i className="fas fa-sort-down" style={{ marginLeft: 3 }}></i>
                   </span>
               </NavLink>
@@ -103,8 +102,8 @@ class Header extends React.Component {
               to="/contact"
               activeClassName="is-active"
             >
-              <span className="icon has-text-primary" style={{ marginRight: 5 }}>
-              <i className="fas fa-envelope"></i>
+              <span className="icon has-text-link">
+              <i className="fa-lg fas fa-envelope"></i>
               </span>
             </NavLink>
             <a className="navbar-item" href="https://github.com/LuuckyG">
@@ -113,13 +112,9 @@ class Header extends React.Component {
               </span>
             </a>
             <a className="navbar-item" href="https://www.linkedin.com/in/luuk-geelen-184806a9/">
-              <span className="icon" style={{ color: '#0077B5', marginLeft: 5 }}>
+              <span className="icon" style={{ color: '#0077B5', marginRight: 5 }}>
                 <i className="fab fa-lg fa-linkedin"></i>
               </span>
-            </a>
-            <a className="navbar-item" href="/"> 
-              {/* "http://resume.luukgeelen.com" */}
-              Resume
             </a>
           </div>
         </div>
