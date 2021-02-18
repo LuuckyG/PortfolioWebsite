@@ -1,5 +1,6 @@
 import React from 'react';
 import PageHeader from '../components/PageHeader'
+import TimeLine from './home/TimeLine'
 
 
 class Homepage extends React.Component {
@@ -22,6 +23,8 @@ class Homepage extends React.Component {
             Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
           </p>
         </PageHeader>
+
+        <TimeLine />
       </main>
     )}
 }

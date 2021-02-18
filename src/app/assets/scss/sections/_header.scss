@@ -19,3 +19,10 @@ a.navbar-item:focus-within,
 a.navbar-item:hover {
     background-color: #f3f3f3;
 }
+
+.navbar-burger {
+    margin-right: 1.5em;
+    width: 2em;
+    height: 2em;
+    top: 10px;
+}

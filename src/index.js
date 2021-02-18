@@ -2,24 +2,21 @@ import ReactDOM from 'react-dom'
 import registerServiceWorker from './registerServiceWorker'
 import { BrowserRouter as Router } from 'react-router-dom'
 import App from './App'
-import * as contentful from 'contentful'
 
-var client = contentful.createClient({
-  space: process.env.REACT_APP_SPACE_ID,
-  accessToken: process.env.REACT_APP_ACCESS_TOKEN
-})
+// Redux Store
+import { Provider } from 'react-redux'
+import { configureStore } from './store'
+import { loadBlog } from './store/Blog'
 
-client.getEntries().then(entries => {
-  entries.items.forEach(entry => {
-    if(entry.fields) {
-      console.log(entry.fields)
-    }
-  })
-})
+const store = configureStore()
+store.dispatch(loadBlog())
+console.log(store.getState())
 
 ReactDOM.render((
-  <Router>
-    <App />
-  </Router>
+  <Provider store={store}>
+    <Router>
+      <App />
+    </Router>
+  </Provider>
 ), document.getElementById('root'))
 registerServiceWorker()

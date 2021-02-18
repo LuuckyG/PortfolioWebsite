@@ -21,9 +21,10 @@ class Header extends React.Component {
     return (
       <nav className="navbar"
           aria-label="main navigation"
-          style={{
-            borderBottom: 'solid 1px #dddddd',
-          }}>
+          // style={{
+          //   // borderBottom: 'solid 1px #dddddd',
+          // }}
+          >
         <div className="container">
           <div className="navbar-brand logo">
             <NavLink
@@ -32,7 +33,7 @@ class Header extends React.Component {
               >
               <span><b>Luuk Geelen</b></span>
             </NavLink>
-            <button className="button navbar-burger" onClick={this.toggleNav}>
+            <button className="button navbar-burger" onClick={this.toggleNav} >
               <span></span>
               <span></span>
               <span></span>
@@ -89,7 +90,7 @@ class Header extends React.Component {
                   to="/courses/python"
                   activeClassName="is-active"
                 >
-                  <span className="icon has-text-secondary" style={{ marginRight: 5 }}>
+                  <span className="icon has-text-warning" style={{ marginRight: 5 }}>
                     <i className="fab fa-python"></i></span> 
                     Python
                 </NavLink>
@@ -106,13 +107,18 @@ class Header extends React.Component {
               <i className="fa-lg fas fa-envelope"></i>
               </span>
             </NavLink>
+            <a className="navbar-item" href="https://medium.com/@lhc.geelen">
+              <span className="icon has-text-link">
+              <i className="fab fa-lg fa-medium"></i>
+              </span>
+            </a>
             <a className="navbar-item" href="https://github.com/LuuckyG">
               <span className="icon">
                 <i className="fab fa-lg fa-github"></i>
               </span>
             </a>
-            <a className="navbar-item" href="https://www.linkedin.com/in/luuk-geelen-184806a9/">
-              <span className="icon" style={{ color: '#0077B5', marginRight: 5 }}>
+            <a className="navbar-item" href="https://www.linkedin.com/in/luuk-geelen-184806a9/" style={{ marginRight: 5 }}>
+              <span className="icon" style={{ color: '#0077B5' }}>
                 <i className="fab fa-lg fa-linkedin"></i>
               </span>
             </a>

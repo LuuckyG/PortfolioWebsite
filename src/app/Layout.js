@@ -27,7 +27,7 @@ const Layout = ({ children }) => (
     />
     <Header />
       <Content>
-        <Router />
+        <Router className="block" />
       </Content>
     <Footer />
   </Site>
