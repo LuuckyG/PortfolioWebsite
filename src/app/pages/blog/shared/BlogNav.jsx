@@ -6,7 +6,8 @@ import StatusTag from '../../../components/StatusTag';
 const BlogNav = ({ to, date, status }) => (
     <nav className="level">
       <div className="level-left">
-        <Link className="level-item button is-small is-link is-outlined" to={to}>Read More</Link>
+        <Link className="level-item button is-small is-link is-outlined" to={to}>
+          { to.pathname === '/blog' ? 'Back to Blog' : 'Read More'}</Link>
       </div>
       <div className="level-right">
         <StatusTag status={status} />

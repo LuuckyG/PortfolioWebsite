@@ -10,7 +10,6 @@ import { loadBlog } from './store/Blog'
 
 const store = configureStore()
 store.dispatch(loadBlog())
-console.log(store.getState())
 
 ReactDOM.render((
   <Provider store={store}>

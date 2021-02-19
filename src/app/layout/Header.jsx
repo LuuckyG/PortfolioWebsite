@@ -19,7 +19,7 @@ class Header extends React.Component {
 
   render() {
     return (
-      <nav className="navbar"
+      <nav className="navbar is-transparant"
           aria-label="main navigation"
           // style={{
           //   // borderBottom: 'solid 1px #dddddd',
@@ -31,7 +31,7 @@ class Header extends React.Component {
                 className='navbar-item'
                 to="/"
               >
-              <span><b>Luuk Geelen</b></span>
+              <span><b className="logo">Luuk Geelen</b></span>
             </NavLink>
             <button className="button navbar-burger" onClick={this.toggleNav} >
               <span></span>
@@ -46,7 +46,7 @@ class Header extends React.Component {
                 to="/about"
                 activeClassName="is-active"
               >
-                <span className="icon has-text-link" style={{ marginRight: 5 }}>
+                <span className="icon has-text-primary" style={{ marginRight: 5 }}>
                   <i className="fas fa-user-circle"></i>
                 </span>
                 About Me
@@ -56,7 +56,7 @@ class Header extends React.Component {
                 to="/blog"
                 activeClassName="is-active"
               >
-                <span className="icon has-text-link" style={{ marginRight: 5 }}>
+                <span className="icon has-text-primary" style={{ marginRight: 5 }}>
                 <i className="fas fa-code"></i>
                 </span>
                 Code Blog
@@ -66,7 +66,7 @@ class Header extends React.Component {
                 to="/projects"
                 activeClassName="is-active"
               >
-                <span className="icon has-text-link" style={{ marginRight: 5 }}>
+                <span className="icon has-text-primary" style={{ marginRight: 5 }}>
                 <i className="fas fa-chart-line"></i>
                 </span>
                 Projects
@@ -77,10 +77,10 @@ class Header extends React.Component {
                   to="/courses"
                   activeClassName="is-active"
                 >
-                  <span className="icon has-text-link" style={{ marginRight: 5 }}>
+                  <span className="icon has-text-primary" style={{ marginRight: 5 }}>
                     <i className="fas fa-book"></i>
                   </span>
-                  Courses <span className="icon has-text-link">
+                  Courses <span className="icon has-text-primary">
                     <i className="fas fa-sort-down" style={{ marginLeft: 3 }}></i>
                   </span>
               </NavLink>
@@ -90,7 +90,7 @@ class Header extends React.Component {
                   to="/courses/python"
                   activeClassName="is-active"
                 >
-                  <span className="icon has-text-warning" style={{ marginRight: 5 }}>
+                  <span className="icon has-text-link" style={{ marginRight: 5 }}>
                     <i className="fab fa-python"></i></span> 
                     Python
                 </NavLink>
@@ -103,12 +103,12 @@ class Header extends React.Component {
               to="/contact"
               activeClassName="is-active"
             >
-              <span className="icon has-text-link">
+              <span className="icon has-text-primary">
               <i className="fa-lg fas fa-envelope"></i>
               </span>
             </NavLink>
             <a className="navbar-item" href="https://medium.com/@lhc.geelen">
-              <span className="icon has-text-link">
+              <span className="icon has-text-primary">
               <i className="fab fa-lg fa-medium"></i>
               </span>
             </a>

@@ -4,7 +4,6 @@
     cursor: pointer;
 
     &:hover {
-        color: $red;
         @include transition(0.3s ease-in-out);
     }
 }
@@ -25,4 +24,8 @@ a.navbar-item:hover {
     width: 2em;
     height: 2em;
     top: 10px;
+}
+
+b.logo {
+    font-size: large;
 }

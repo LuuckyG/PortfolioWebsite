@@ -1,9 +1,9 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import * as Markdown from 'react-markdown'
 import PageHeader from '../../components/PageHeader'
 import PageContent from '../../components/PageContent'
 import BlogContent from './shared/BlogContent'
+import BlogNav from './shared/BlogNav'
 
 
 const BlogPost = ({ location: { state: { props } }}) => (
@@ -12,14 +12,11 @@ const BlogPost = ({ location: { state: { props } }}) => (
       <Markdown source={props.subHeading} />
     </PageHeader>
     <PageContent>
+      <BlogNav date={props.date}  status={props.status} to={{
+            pathname: `/blog`,
+            state: { props }
+          }} />
       <BlogContent {...props } />
-      <div className="level-left">
-        <Link className="level-item button is-small is-link is-outlined" to={{
-          pathname: `/blog`,
-          state: { props }
-        }}>Back to the Blog
-        </Link>
-      </div>
     </PageContent>
   </div>
   )
