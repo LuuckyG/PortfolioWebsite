@@ -1,16 +1,39 @@
-footer {
-    font-family: 'Courier New', Courier, monospace;
-    color: $white;
-    background-color: $blackgrey !important;
+.container.footer {
+    color: $blackgrey;
+    background-color: $white !important;
     bottom: 0;
     width: 100%;
-    padding: 0;
-    margin-top: 40px;
-    
-    .center {
+    margin: 0 auto;
+    padding: 0 !important;
+    flex-grow: 0 !important;
+    display: flex;
+
+    .footer-placeholder {
+        visibility: hidden;
+        flex: 1;
+    }
+
+    .footer-socials{
+        flex: 2;
+        display: flex;
         margin: auto;
-        top: 50%;
-        transform: translate(0, 50%);
-        text-align: center;
+
+        ul {
+            margin: auto;
+            padding: 0;
+
+            li {
+                text-align: center;
+                list-style-type: none;
+                display: inline-block;
+                margin-left: 15px;
+            }
+        }
+    }
+
+    .footer-copyright {
+        text-align: end;
+        flex: 1;
+        margin: 2rem 0;
     }
 }

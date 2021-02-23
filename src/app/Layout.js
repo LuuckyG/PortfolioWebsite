@@ -7,6 +7,7 @@ import Header from './layout/Header'
 import Content from './layout/Content'
 import Footer from './layout/Footer'
 import Router from './layout/Router'
+import ScrollToTop from './layout/ScrollToTop'
 
 
 const Layout = ({ children }) => (
@@ -28,6 +29,7 @@ const Layout = ({ children }) => (
     <Header />
       <Content>
         <Router className="block" />
+        <ScrollToTop />
       </Content>
     <Footer />
   </Site>

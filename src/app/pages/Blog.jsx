@@ -19,7 +19,9 @@ class Blog extends React.Component {
           ? <Loader className="has-text-primary"></Loader>
           :
           <div className="blog-posts columns is-multiline">
-            { this.props.blog.posts.map(({fields}, i) =>
+            { this.props.blog.posts
+              .sort((a, b) => a.fields.date < b.fields.date ? 1 : -1)
+              .map(({fields}, i) =>
               <BlogCard key={i} {...fields} />
             )}
           </div>

@@ -1,24 +1,22 @@
-import React from 'react'
-import * as Markdown from 'react-markdown'
-import PageHeader from '../../components/PageHeader'
+import React from 'react';
+
+import HeaderImage from '../../components/HeaderImage'
 import PageContent from '../../components/PageContent'
 import BlogContent from './shared/BlogContent'
-import BlogNav from './shared/BlogNav'
 
 
-const BlogPost = ({ location: { state: { props } }}) => (
-  <div className="container">
-    <PageHeader title={props.title}>
-      <Markdown source={props.subHeading} />
-    </PageHeader>
+const BlogPost = ({ location: {state: {props}}} ) => (
+  <>
+    <HeaderImage 
+        bg={props.cardImage.fields.file.url} 
+        title={props.title}
+        subtitle={props.subHeading}>
+    </HeaderImage>
+
     <PageContent>
-      <BlogNav date={props.date}  status={props.status} to={{
-            pathname: `/blog`,
-            state: { props }
-          }} />
-      <BlogContent {...props } />
+      <BlogContent { ...props } />
     </PageContent>
-  </div>
-  )
+  </>
+)
 
 export default BlogPost;

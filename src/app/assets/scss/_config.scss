@@ -58,6 +58,9 @@ $gray:   #aaa;
 $black:  #111;
 $blackgrey: #333;
 
+html, body {
+    font-family: 'Playfair Display', sans-serif !important;
+}
 
 // Mix-ins
 @mixin transition($e) {

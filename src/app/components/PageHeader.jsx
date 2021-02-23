@@ -4,10 +4,10 @@ const PageHeader = (props) => (
     <section className={`hero ${props.color}`}>
       <div className="hero-body">
         <div className="container">
-          <h1 className="title">
+          <h1 className="page-title">
             {props.title}
           </h1>
-          <h2 className="subtitle">
+          <h2 className="page-subtitle">
             {props.children}
           </h2>
         </div>

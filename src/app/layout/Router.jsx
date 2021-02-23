@@ -22,4 +22,5 @@ const Router = () => (
     <Route path="/contact" component={Contact} />
   </Switch>
 )
-export default Router
+
+export default Router;

@@ -1,12 +1,6 @@
 import React from 'react';
-import { connect } from 'react-redux'
-import { Link } from 'react-router-dom'
-
 import PageHeader from '../components/PageHeader'
-import TimeLine from './home/TimeLine'
-import BlogCard from './blog/BlogCard';
-import Loader from '../components/Loader'
-
+import me from '../assets/img/me.jpg'
 
 class Homepage extends React.Component {
   
@@ -18,7 +12,7 @@ class Homepage extends React.Component {
   render() {
     return (
       <main className="container">
-        <PageHeader title="Welcome!">
+        <PageHeader className="introduction" title="Luuk Geelen">
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
@@ -28,38 +22,13 @@ class Homepage extends React.Component {
             Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
           </p>
         </PageHeader>
-
-        <TimeLine />
-
-        <PageHeader title="My Recent Blogs">
-          Your standard <strong>JavaScript</strong> programming blog, albeit, probably not very good, but I will at least try to keep it entertaining. 
-          This blog is a chronological mix of random posts on Angular, React, Functional Programming, and my <strong>project walkthroughs</strong>.
-        </PageHeader>
-        { this.props.blog.loading
-          ? <Loader className="has-text-primary"></Loader>
-          :
-          <div className="blog-posts columns is-multiline">
-            { this.props.blog.posts
-              .sort((a, b) => a.fields.date < b.fields.date ? 1 : -1)
-              .slice(0, 3)
-              .map(({fields}, i) =>
-              <BlogCard key={i} {...fields} />
-            )}
-          </div>
-        }
-        <div className="level-left">
-          <Link className="level-item button is-small is-link is-outlined" to={'/blog'}>
-            See All My Blogs</Link>
+        <div className="profile-picture-wrapper">
+          <picture>
+            <img className="profile-picture" src={me} alt="Me!"/>
+          </picture>
         </div>
-
       </main>
     )}
 }
 
-function mapStateToProps(state, ownProps) {
-  return {
-    blog: state.blog
-  }
-}
-
-export default connect(mapStateToProps) (Homepage);
+export default Homepage; 
