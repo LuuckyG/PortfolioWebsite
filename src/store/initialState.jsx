@@ -1,7 +1,8 @@
 
 export default {
   blog: {
+    posts: [],
     loading: false,
-    posts: []
+    error: null
   }
 }

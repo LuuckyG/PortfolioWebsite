@@ -1,19 +1,24 @@
-import initialState from '../../store/initialState'
-import * as types from './types'
+import initialState from '../../store/initialState';
+import * as types from './types';
 
 export default function blogReducer(state=initialState.blog, action) {
   switch (action.type) {
-    case types.BLOG_LOADING:
+    case types.GET_BLOG_ASYNC.PENDING:
       return {
         ...state,
-        loading: action.isLoading
+        loading: true
       }
-    case types.LOAD_BLOG_POSTS_SUCCESS:
+    case types.GET_BLOG_ASYNC.SUCCESS:
       return {
         ...state,
         posts: action.posts,
         loading: false
-      } 
+      }
+    case types.GET_BLOG_ASYNC.ERROR:
+      return {
+        ...state,
+        loading: false
+      }
     default:
       return state
   }

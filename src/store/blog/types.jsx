@@ -1,3 +1,3 @@
+import { createAsyncTypes } from '../Utilities'
 
-export const BLOG_LOADING = 'BLOG_LOADING'
-export const LOAD_BLOG_POSTS_SUCCESS = "LOAD_BLOG_POSTS_SUCCESS"
+export const GET_BLOG_ASYNC = createAsyncTypes('GET_BLOG')

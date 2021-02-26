@@ -1,21 +1,8 @@
-import * as contentful from 'contentful'
-import * as actions from './blog/actions'
+import { createAction } from './Utilities'
+import * as types from './blog/types'
 
-const client = contentful.createClient({
-  space: process.env.REACT_APP_SPACE_ID,
-  accessToken: process.env.REACT_APP_ACCESS_TOKEN
-})
-
-export function loadBlog() {
-  return dispatch => {
-    dispatch(actions.blogLoading())
-    return client.getEntries()
-      .then(({items}) => {
-        dispatch(actions.loadBlogSuccess(items))
-      })
-      .catch(error => {
-        console.log(error)
-        dispatch(actions.blogLoading(false))
-      })
-  }
+export const actions = {
+  pending: () => createAction(types.GET_BLOG_ASYNC.PENDING),
+  success: (posts) => createAction(types.GET_BLOG_ASYNC.SUCCESS, { posts }),
+  error: (error) => createAction(types.GET_BLOG_ASYNC.ERROR, { error })
 }
