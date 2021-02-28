@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 import HeaderImage from '../../components/HeaderImage'
 import PageContent from '../../components/PageContent'
@@ -10,12 +11,16 @@ const BlogPost = ({ location: {state: {props}}} ) => (
     <HeaderImage 
         bg={props.cardImage.fields.file.url} 
         title={props.title}
-        subtitle={props.subHeading}>
+        date={props.date}
+        category={props.category}>
     </HeaderImage>
 
     <PageContent>
       <BlogContent { ...props } />
-    </PageContent>
+
+      <Link className="back-button button is-small is-link is-outlined" to='/blog'>
+      Back to Blog</Link>
+    </PageContent>    
   </>
 )
 

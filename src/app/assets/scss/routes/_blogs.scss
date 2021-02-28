@@ -3,3 +3,22 @@
     margin-right: 0.5rem;
     padding-bottom: 30px;
 }
+
+.blog-title-bg {
+    background: #333;
+    width: 40%;
+    height: 300px;
+    margin: auto;
+    opacity: 0.8;
+    filter: blur(0.8);
+    color: '#FFF';
+}
+
+.blog-title {
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+.back-button {
+    margin-top: 1rem;
+}

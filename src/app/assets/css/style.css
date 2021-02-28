@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
 html, body {
-  font-family: 'Playfair Display', sans-serif !important; }
+  font-family: 'Playfair Display', sans-serif !important;
+  height: 100%;
+  min-height: 100vh; }
 
 .diagonal-box {
   background-image: linear-gradient(to right top, #65dfc9, #6cdbeb);
@@ -19,19 +21,64 @@ html, body {
   margin: 0 auto;
   transform: skewY(7deg); }
 
-main {
-  display: flex;
-  position: absolute;
-  transform: translateY(40%); }
-
 .page-title {
-  font-size: 8rem;
-  font-weight: 700; }
+  font-size: 4rem; }
+
+main {
+  margin: auto;
+  width: 70%;
+  height: 80vh; }
+  main .intro-page {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    main .intro-page .intro-text {
+      margin: auto; }
+      main .intro-page .intro-text .intro-title {
+        font-size: 8rem;
+        font-weight: 700; }
+    main .intro-page .profile-picture-wrapper {
+      margin: auto;
+      display: flex;
+      align-items: center; }
+      main .intro-page .profile-picture-wrapper .profile-picture {
+        margin: auto;
+        width: 80%;
+        object-fit: cover;
+        object-position: center center;
+        opacity: 1;
+        border-radius: 50%; }
 
 .blog-posts {
   margin-left: -.25rem;
   margin-right: 0.5rem;
   padding-bottom: 30px; }
+
+.blog-title-bg {
+  background: #333;
+  width: 40%;
+  height: 300px;
+  margin: auto;
+  opacity: 0.8;
+  filter: blur(0.8);
+  color: '#FFF'; }
+
+.blog-title {
+  font-size: 3em;
+  margin-bottom: 30px; }
+
+.back-button {
+  margin-top: 1rem; }
+
+.contact-form-wrapper {
+  display: flex;
+  align-content: center; }
+  .contact-form-wrapper .contact-form,
+  .contact-form-wrapper .contact-info {
+    margin: auto;
+    margin-left: 2rem; }
 
 .navbar-item {
   text-decoration: none;
@@ -70,7 +117,8 @@ b.logo {
   width: 100%;
   margin: 0 auto;
   padding: 0 !important;
-  flex-grow: 0 !important;
+  flex-wrap: nowrap;
+  flex-direction: row;
   display: flex; }
   .container.footer .footer-placeholder {
     visibility: hidden;
@@ -78,6 +126,8 @@ b.logo {
   .container.footer .footer-socials {
     flex: 2;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     margin: auto; }
     .container.footer .footer-socials ul {
       margin: auto;

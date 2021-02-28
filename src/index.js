@@ -6,10 +6,12 @@ import App from './App'
 // Redux Store
 import { Provider } from 'react-redux'
 import { configureStore } from './store'
-import { loadBlog } from './store/Blog'
+import { loadBlog } from './store/blog/actions'
+import { loadProject } from './store/project/actions'
 
 const store = configureStore()
 store.dispatch(loadBlog())
+store.dispatch(loadProject())
 
 ReactDOM.render((
   <Provider store={store}>

@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import BlogCard from './blog/BlogCard';
 import MediumNote from './blog/MediumNote';
 import PageHeader from '../components/PageHeader';
-import Loader from '../components/Loader'
+import Loader from '../components/Loader';
 
 
 class Blog extends React.Component {

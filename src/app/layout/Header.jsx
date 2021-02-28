@@ -23,7 +23,7 @@ class Header extends React.Component {
           aria-label="main navigation"
           >
         <div className="container">
-          <div className="navbar-brand logo">
+          <div className="navbar-brand logo" style={{marginTop: 10, marginBottom: 10}}>
             <NavLink
                 className='navbar-item'
                 to="/"

@@ -5,9 +5,11 @@ const importScript = resourceUrl=> {
     script.src = resourceUrl;
     script.async = true;
     document.body.appendChild(script);
-return () => {
-      document.body.removeChild(script);
-    }
-  }, [resourceUrl]);
-};
+    
+    return () => {
+          document.body.removeChild(script);
+        }
+      }, [resourceUrl]);
+    };
+
 export default importScript;

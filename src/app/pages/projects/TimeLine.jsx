@@ -1,7 +1,7 @@
 import React from 'react';
 
 const TimeLine = (props) => (
-    <div className="timeline is-centered">
+    <div className="timeline">
         <header className="timeline-header">
             <span className="tag is-medium is-primary">Start</span>
         </header>

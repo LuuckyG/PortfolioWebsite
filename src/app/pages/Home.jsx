@@ -1,5 +1,4 @@
 import React from 'react';
-import PageHeader from '../components/PageHeader'
 import me from '../assets/img/me.jpg'
 
 class Homepage extends React.Component {
@@ -11,21 +10,29 @@ class Homepage extends React.Component {
 
   render() {
     return (
-      <main className="container">
-        <PageHeader className="introduction" title="Luuk Geelen">
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-            It has survived not only five centuries, but also the leap into electronic typesetting, remaining 
-            essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
-            Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-          </p>
-        </PageHeader>
-        <div className="profile-picture-wrapper">
-          <picture>
-            <img className="profile-picture" src={me} alt="Me!"/>
-          </picture>
+      <main>
+        <div className="intro-page">
+          <div className="intro-text">
+            <p className="intro-title">Luuk Geelen</p>
+            <p>
+              Hi, There! Welcome on my Portfolio site!<br></br>
+              About me:
+              <ul>
+                <li>
+                  Python Developer
+                </li>
+                <li>
+                  Continuous Learner
+                </li>
+                <li>
+                  Chess Lover
+                </li>
+              </ul>
+            </p>
+          </div>       
+          <div className="profile-picture-wrapper">
+              <img className="profile-picture" src={me} alt="Me!"/>
+          </div>
         </div>
       </main>
     )}

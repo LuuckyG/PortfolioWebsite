@@ -1,7 +1,6 @@
 import React from 'react';
-import BlogNav from './shared/BlogNav'
 
-const BlogCard = (props) => (
+const Project = (props) => (
   <div className="column is-4">
     <div className="card">
       <div className="card-image">
@@ -28,13 +27,9 @@ const BlogCard = (props) => (
           <time dateTime="2016-1-1">11:09 PM - 1 Jan 2016</time>
           { props.children }
         </div>
-        <BlogNav date={props.date}  status={props.status} to={{
-          pathname: `/blog${props.path}`,
-          state: { props }
-        }} />
       </div>
     </div>
   </div>
 )
 
-export default BlogCard;
+export default Project;

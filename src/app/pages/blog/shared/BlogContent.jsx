@@ -5,13 +5,14 @@ const BlogContent = (props) => (
   <article className="media">
     <div className="media-content">
       <div className="content">
+        <Markdown source={props.subHeading} />
         <Markdown
           source={
             props.limit
             ? props.content.split(" ").splice(0,props.limit).join(" ").concat('...')
             : props.content
           }
-        ></Markdown>
+        />
       </div>
       { props.children }
     </div>

@@ -1,7 +1,9 @@
 import blog from './blog/sagas'
+import project from './project/sagas'
 
 const sagas = [
-  blog
+  blog,
+  project
 ]
 
 export const initSagas = (sagaMiddleware) =>

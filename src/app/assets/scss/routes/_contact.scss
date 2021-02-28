@@ -1,0 +1,10 @@
+.contact-form-wrapper {
+    display: flex;
+    align-content: center;
+
+    .contact-form,
+    .contact-info {
+        margin: auto;
+        margin-left: 2rem;
+    }
+}

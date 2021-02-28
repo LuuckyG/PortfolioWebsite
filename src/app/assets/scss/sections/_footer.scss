@@ -5,7 +5,8 @@
     width: 100%;
     margin: 0 auto;
     padding: 0 !important;
-    flex-grow: 0 !important;
+    flex-wrap: nowrap;
+    flex-direction: row;
     display: flex;
 
     .footer-placeholder {
@@ -16,6 +17,8 @@
     .footer-socials{
         flex: 2;
         display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
         margin: auto;
 
         ul {
