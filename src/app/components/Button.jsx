@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
+import theme from '../utils/theme';
+
 const Button = styled.button`
   transition: all 0.15s ease-in-out;
   font-size: 0.9rem;
@@ -8,11 +10,11 @@ const Button = styled.button`
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 0.15rem;
-  padding: ${props => `${props.theme.spacing.sm} ${props.theme.spacing.md}`};
+  padding: ${theme.spacing.sm} ${theme.spacing.md};
   border-radius: 25px;
   background-image: ${props =>
-    `linear-gradient(-45deg, ${props.theme.colors.darkgreen}, ${props.theme.colors.lightgreen})`};
-  color: ${props => props.theme.colors.white};
+    `linear-gradient(-45deg, ${theme.colors.darkgreen}, ${theme.colors.lightgreen})`};
+  color: ${theme.colors.white};
   width: ${props => (props.fullWidth ? '100%' : 'unset')};
   animation: fadeInUp 2s ease;
 
