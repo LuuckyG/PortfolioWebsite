@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 
 const Button = styled.button`
   transition: all 0.15s ease-in-out;
