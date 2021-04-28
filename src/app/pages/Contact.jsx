@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 import { FaPaperPlane } from 'react-icons/fa';
 
 import Grid from '../components/Grid';
