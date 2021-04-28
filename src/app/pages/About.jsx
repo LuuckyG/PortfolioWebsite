@@ -1,29 +1,75 @@
-import React from 'react';
-import PageHeader from '../components/PageHeader'
+import styled from '@emotion/styled';
 
-class About extends React.Component {
+import me from '../assets/img/about.JPG'
+import site from '../utils/site.json'
+import Grid from '../components/Grid'
+import Column from '../components/Column'
+import Heading from '../components/Heading'
+import Section from '../components/Section'
+import ProgressBar from '../components/ProgressBar'
+import Text from '../components/Text'
+import { ImageWrapper, ProfileImg } from '../components/ProfileImage'
+
+const TwoColumnsWrapper = styled.div`
+  display: flex;
+  gap: 2.5em;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+const OneColumn = styled.div`
+  flex: 1; 
+  padding: 0 25px;
   
-  constructor() {
-    super();
-    this.state = {
-      isActive: false,
-    };
+  @media only screen and (max-width: 1199px) {
+    flex: 100%;
+    padding: 0;
   }
+`;
 
-  render() {
-    return (
-      <div className="container">
-        <PageHeader title="About Me">
-          <p>
-          Hi! I am Luuk, a self-taught programmer. 
-          Started by using Python for healthcare focussed Machine and 
-          Deep Learning projects. I currently focus on the development of 
-          web applications. Creating meaningful and fun projects for everyone 
-          to enjoy is what motivates me to keep creating and learning!
-          </p>  
-        </PageHeader>
-      </div>
-      )}
+const TechnologiesWrapper = styled.ul`
+  padding: 0 2em;
+`;
+
+const Technology = styled.li`
+  padding: 0.5em 0;
+`;
+
+
+const About = () => {
+  return (
+    <Grid>
+      <Column centered largeMonitor={12} computer={12} tablet={12} mobile={12}>
+        <Heading size="small">About Me</Heading>
+        <TwoColumnsWrapper>
+          <OneColumn>
+            <Section>
+              <Text> {site.bio.about} </Text>
+            </Section>
+            <Section>
+              <h1 style={{ fontSize: '2em' }}>Skills</h1>
+              <TechnologiesWrapper>
+                {site.technologies.map((tech, idx) => (
+                  <Technology key={idx}>
+                    {tech.name}
+                    <ProgressBar
+                      value={10 * tech.proficiency}
+                    />
+                  </Technology>
+                ))}
+              </TechnologiesWrapper>
+            </Section>
+          </OneColumn>
+          <OneColumn>
+            <ImageWrapper homeImg={false}>
+              <ProfileImg border_rad={'25px'} src={me} alt="Me!" />
+            </ImageWrapper>
+          </OneColumn>
+        </TwoColumnsWrapper>
+      </Column>
+    </Grid >
+  )
 }
 
 export default About;

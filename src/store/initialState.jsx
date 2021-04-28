@@ -1,5 +1,4 @@
-
-export default {
+const initialState = {
   blog: {
     posts: [],
     loading: false,
@@ -11,3 +10,5 @@ export default {
     error: null
   }
 }
+
+export default initialState;

@@ -1,38 +1,61 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
+import { Global, css, ThemeProvider } from '@emotion/react'
 
+import theme from '../app/utils/theme'
 import Site from './layout/Site'
 import Header from './layout/Header'
 import Content from './layout/Content'
 import Footer from './layout/Footer'
 import Router from './layout/Router'
 import ScrollToTop from './layout/ScrollToTop'
+import site from './utils/site.json'
+
+const globalStyles = css`
+  @font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Playfair Display'), local('Playfair Display');
+  }
+  @font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local('Playfair Display'), local('Playfair Display');
+  }
+`;
 
 
 const Layout = ({ children }) => (
-  <Site>
-    <Helmet
-      title="Luuk's Personal Development Site"
-      meta={[
-        { name: 'description', content: 'Luuk Geelen\'s personal website, portfolio, blog, tutorials, and just cool stuff' },
-        { name: 'keywords', content: 'resume, blog, porfolio, tutorials, online courses, luuk geelen' },
-      ]}
-      script={[
-        { 'src': 'https://use.fontawesome.com/releases/v5.0.4/js/all.js'},
-      ]}
-      link={[
-        {'rel':'stylesheet', 'href': 'https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css'},
-        {'rel':'stylesheet', 'href': './style.css'}
-      ]}
-    />
-    <Header />
+  <ThemeProvider theme={theme}>
+    <Global styles={globalStyles} />
+    <Site>
+      <Helmet
+        title={site.info.title}
+        meta={[
+          { name: 'description', content: site.info.description },
+          { name: 'keywords', content: site.info.keywords },
+        ]}
+        script={[]}
+        link={[
+          { 'rel': 'stylesheet', 'href': 'https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css' },
+          { 'rel': 'preconnect', 'href': 'https://fonts.gstatic.com' },
+          { 'rel': 'stylesheet', 'href': 'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap' }
+          // { 'rel': 'stylesheet', 'href': './style.css' }
+        ]}
+      />
+      <Header />
       <Content>
-        <Router className="block" />
+        <Router />
         <ScrollToTop />
       </Content>
-    <Footer />
-  </Site>
+      <Footer />
+    </Site>
+  </ThemeProvider>
 )
 
 Layout.propTypes = {

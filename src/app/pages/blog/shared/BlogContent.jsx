@@ -1,22 +1,28 @@
-import React from 'react'
-import * as Markdown from 'react-markdown'
+import * as Markdown from 'react-markdown';
+import styled from 'styled-components';
+import BlogStyle from './BlogStyle';
 
-const BlogContent = (props) => (
-  <article className="media">
-    <div className="media-content">
-      <div className="content">
-        <Markdown source={props.subHeading} />
-        <Markdown
-          source={
-            props.limit
-            ? props.content.split(" ").splice(0,props.limit).join(" ").concat('...')
-            : props.content
-          }
-        />
-      </div>
-      { props.children }
-    </div>
-  </article>
-  )
+const BlogArticle = styled.article`
+  align-items: flex-start;
+  display: flex;
+`;
+
+const BlogContents = styled.div`
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+`;
+
+const BlogContent = ({ subHeading, content, children }) => (
+  <BlogArticle>
+    <BlogContents>
+      <BlogStyle>
+        <Markdown source={subHeading} />
+        <Markdown source={content} />
+        {children}
+      </BlogStyle>
+    </BlogContents>
+  </BlogArticle>
+)
 
 export default BlogContent;

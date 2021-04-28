@@ -1,7 +1,7 @@
-import initialState from '../../store/initialState';
+import initialState from '../initialState';
 import * as types from './types';
 
-export default function projectReducer(state=initialState.projects, action) {
+export default function projectReducer(state = initialState.projects, action) {
   switch (action.type) {
     case types.GET_PROJECT_ASYNC.PENDING:
       return {
@@ -9,9 +9,10 @@ export default function projectReducer(state=initialState.projects, action) {
         loading: true
       }
     case types.GET_PROJECT_ASYNC.SUCCESS:
+      let projects = action.projects.filter(content => content.sys.contentType.sys.id === 'projects')
       return {
         ...state,
-        projects: action.projects,
+        projects: projects,
         loading: false
       }
     case types.GET_PROJECT_ASYNC.ERROR:

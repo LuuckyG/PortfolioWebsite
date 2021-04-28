@@ -1,0 +1,42 @@
+const theme = {
+    spacing: {
+      xs: '0.5rem',
+      sm: '1rem',
+      md: '2rem',
+      lg: '3rem',
+      xl: '4rem',
+      xxl: '5rem',
+    },
+    colors: {
+      active_color: '#28a745',
+      primary: '#6a61c7',
+      accent: '#CC26E8',
+      black: '#28313B',
+      white: '#ffffff',
+      grey: '#8B8B8B',
+      lightgrey: '#eeeeee',
+      danger: '#c80000',
+      blue:    '#007bff',
+      indigo:  '#6610f2',
+      purple:  '#6f42c1',
+      pink:    '#e83e8c',
+      red:     '#dc3545',
+      orange:  '#fd7e14',
+      yellow:  '#ffc107',
+      green:   '#28a745',
+      lightgreen: '#1d9241',
+      darkgreen: '#77de7b',
+      teal:    '#0085A1',
+      cyan:    '#17a2b8',
+      aqua:  '#7FDBFF',
+      navy:  '#001F3F',
+      olive: '#3D9970',
+      lime:  '#01FF70',
+      maroon:  '#85144B',
+      silver: '#DDDDDD',
+      gray:   '#AAAAAA',
+      blackgrey: '#333333'
+    },
+  };
+
+  export default theme;

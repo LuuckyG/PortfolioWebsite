@@ -13,7 +13,6 @@ const fetchPosts = () => client.getEntries()
 export function* fetchingBlogPosts() {
   try {
     const posts = yield call(fetchPosts)
-    console.log(posts)
     yield put(actions.success(posts.items))
   } catch (e) {
     console.log(e)
