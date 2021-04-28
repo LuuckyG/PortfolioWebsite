@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 
 const Heading = styled.h1`
   font-family: 'Playfair Display', 'FuturaNew', sans-serif;

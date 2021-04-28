@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 
 import theme from '../utils/theme'
 
@@ -7,7 +7,7 @@ const ProgressBarWrapper = styled.div`
     background: #eee;
     text-align: center;
     font-weight: bold;
-    color: ${({ theme }) => `${theme.colors.white}`};
+    color: ${theme.colors.white};
     border-radius: .5rem;
 `;
 
