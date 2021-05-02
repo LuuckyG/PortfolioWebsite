@@ -3,7 +3,7 @@
   "homepage": ".",
   "version": "0.2.0",
   "private": true,
-  "main": "app/assest/scss/style.scss",
+  "main": "src/App.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
