@@ -7,9 +7,12 @@
   <meta name="theme-color" content="#000000" />
   <meta name="description" content="Hi, I am Luuk!" />
   <link rel="icon" href="%PUBLIC_URL%/LG.svg" />
-  <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
   <title>Luuk Geelen</title>
+  <script>
+    (function () {
+      emailjs.init(env.REACT_APP_EMAILJS_USERID);
+    })();
+  </script>
 </head>
 
 <body>

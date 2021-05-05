@@ -28,6 +28,7 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "contentful": "^8.1.7",
+    "emailjs-com": "^2.6.4",
     "moment": "^2.29.1",
     "particles-bg": "^2.5.5",
     "react": "^17.0.1",

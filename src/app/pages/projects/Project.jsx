@@ -1,14 +1,29 @@
 import moment from 'moment';
+import * as Markdown from 'react-markdown';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+
+import { FaCalendarAlt, FaGithub } from 'react-icons/fa';
+import { IoBusiness } from 'react-icons/io5';
+import { ImLocation } from 'react-icons/im';
+
 import theme from '../../utils/theme';
-import { FaCalendarAlt, FaGithub } from 'react-icons/fa'
-import { IoBusiness } from 'react-icons/io5'
-import { ImLocation } from 'react-icons/im'
 import StatusTag from '../../components/StatusTag';
 
 
 const TimelineItem = styled.div`
+  animation: fadeInUp 2s ease;
+
+  @keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 `
 
 const TimelineContent = styled.div`
@@ -176,9 +191,9 @@ export default function Project({
             ))}
           </ProjectTechnologies>
           <ProjectDescription>
-            {description}
+            <Markdown source={description} />
           </ProjectDescription>
-          {githubLink && <a href={githubLink}><GithubLink><p>View on Github</p> <FaGithub /></GithubLink></a>}
+          {githubLink && <a href={githubLink} target="_blank" rel="noreferrer"><GithubLink><p>View on Github</p> <FaGithub /></GithubLink></a>}
         </ProjectInfo>
         <ImagesWrapper>
           <ProjectBannerImage>

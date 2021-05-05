@@ -26,8 +26,7 @@ const Blog = ({ blog }) => {
     <Grid>
       <Column centered largeMonitor={12} computer={12} tablet={12} mobile={12}>
         <Heading size="small">Code Blog</Heading>
-        Your standard <strong>JavaScript</strong> programming blog, albeit, probably not very good, but I will at least try to keep it entertaining.
-        This blog is a chronological mix of random posts on Angular, React, Functional Programming, and my <strong>project walkthroughs</strong>.
+        This blog is a chronological mix of posts on my work in fun and professional projects. The blog posts will contain <strong>project walkthroughs</strong>, but are also about everything I learn on the way. Subjects that I will mostly cover are <strong>Python</strong>, <strong>Machine</strong> and <strong>Deep Learning </strong>, <strong>JavaScript</strong> and <strong>React</strong>.
         {blog.loading
           ? <Loader className="has-text-primary"></Loader>
           :
