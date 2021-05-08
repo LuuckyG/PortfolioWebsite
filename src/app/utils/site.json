@@ -1,0 +1,194 @@
+{
+   "info": {
+      "name": "Luuk Geelen",
+      "title": "Luuk Geelen | Back End Python Engineer",
+      "description": "Luuk Geelen's personal website, portfolio, blog, tutorials, and just cool stuff",
+      "email": "luuk.geelen@hotmail.com",
+      "logo": "Luuk Geelen",
+      "url": "https://www.luukgeelen.nl",
+      "baseurl": "",
+      "keywords": "resume, blog, porfolio, tutorials, online courses, luuk geelen"
+   },
+   "menu": [
+      {
+         "name": "About Me",
+         "link": "/about"
+      },
+      {
+         "name": "Code Blog",
+         "link": "/blog"
+      },
+      {
+         "name": "Project",
+         "link": "/project"
+      },
+      {
+         "name": "Contact",
+         "link": "/contact"
+      }
+   ],
+   "bio": {
+      "about": "Hi! I am Luuk, a self-taught programmer. Started by using Python for healthcare focussed Machine and Deep Learning projects. I currently focus on the development of web applications. Creating meaningful and fun projects for everyone to enjoy is what motivates me to keep creating and learning!"
+   },
+   "skills": [
+      {
+         "skill": "Data Analytics",
+         "proficiency": 10,
+         "icon": "fa-pie-chart"
+      },
+      {
+         "skill": "Machine Learning",
+         "proficiency": 8,
+         "icon": "fa-cogs"
+      },
+      {
+         "skill": "Medical Physics",
+         "proficiency": 9,
+         "icon": "fa-heartbeat"
+      },
+      {
+         "skill": "Software Development",
+         "proficiency": 8,
+         "icon": "fa-code-fork"
+      },
+      {
+         "skill": "Project Management",
+         "proficiency": 8,
+         "icon": "fa-calendar-check-o"
+      },
+      {
+         "skill": "Teamwork",
+         "proficiency": 9,
+         "icon": "fa-comments-o"
+      }
+   ],
+   "technologies": [
+      {
+         "name": "Python",
+         "proficiency": 9,
+         "location": "python.svg"
+      },
+      {
+         "name": "Git",
+         "proficiency": 9,
+         "location": "git.svg"
+      },
+      {
+         "name": "JavaScript",
+         "proficiency": 8,
+         "location": "javascript.svg"
+      },
+      {
+         "name": "SQL",
+         "proficiency": 8,
+         "location": "postgresql2.svg"
+      },
+      {
+         "name": "C++",
+         "proficiency": 7,
+         "location": "cplus.svg"
+      }
+   ],
+   "projects": [
+      {
+         "name": "Smart Tender Analytics Tool",
+         "folder": "proj-1",
+         "link-icon": "fa fa-external-link",
+         "link": "mkbfinancieringshulp.herokuapp.com",
+         "description": "Work in progress. Goal: Web application enabling consultants to automatically write and instantly give feedback to clients, regarding their tender.",
+         "company": "Evolvalor",
+         "technologies": [
+            "Python",
+            "CSS",
+            "HTML",
+            "JavaScript",
+            "Flask",
+            "SQL",
+            "Bootstrap"
+         ],
+         "time": "Sep 2019 - now"
+      },
+      {
+         "name": "Automatic Liver Segmentation Using Deep Learning",
+         "folder": "proj-2",
+         "link-icon": "",
+         "link": "",
+         "description": "Minor Project. Researching the use of self-attention mechanisms for the segmentation of the liver in CT scans.",
+         "company": "Quantib",
+         "technologies": [
+            "Python",
+            "Tensorflow",
+            "Numpy",
+            "Pandas"
+         ],
+         "time": "Sep 2019 - Jan 2020"
+      },
+      {
+         "name": "Stroke Detection Using Machine Learning",
+         "folder": "proj-3",
+         "link-icon": "",
+         "link": "",
+         "description": "Graduation Project. Focussing on stroke detection using Graph Convolutional Neural Networks",
+         "company": "AMC Amsterdam",
+         "technologies": [
+            "Python",
+            "Tensorflow"
+         ],
+         "time": "Jan 2019 - Jul 2019"
+      },
+      {
+         "name": "Portfolio Website",
+         "folder": "proj-4",
+         "link-icon": "",
+         "link": "",
+         "description": "Building a responsive website using HTML, CSS, JavaScript, showcasing my skills and previous work.",
+         "company": "MY OWN COMPANY",
+         "technologies": [
+            "HTML",
+            "SASS",
+            "JavaScript",
+            "JQuery",
+            "Jekyll"
+         ],
+         "time": "June 2020 - now"
+      },
+      {
+         "name": "Study of the Funding Landscape of Digital Health Innovations",
+         "folder": "proj-5",
+         "link-icon": "",
+         "link": "#",
+         "description": "Market landscape study of the digital health funding landscape.",
+         "company": "Evolvalor",
+         "technologies": [
+            "Python"
+         ],
+         "time": "Jan 2018 - Jul 2018"
+      }
+   ],
+   "clients": [
+      {
+         "name": "Mr. K",
+         "title": "Co-Founder",
+         "company": "volvalor",
+         "img": "anonymous.png",
+         "quote": "We all felt that Luuk was a great asset to our team — and really worked hard to understand our products from the point of view of the customer",
+         "logo": "evolvalor.png"
+      },
+      {
+         "name": "Mr. J",
+         "title": "CTO",
+         "company": "uantib BV",
+         "img": "anonymous.png",
+         "quote": "Working with Luuk was a great experience. He showed great commitment to our product and not only delivered what we wanted, he also went the extra mile and the end result was better than we could ever dream of!",
+         "logo": "quantib.png"
+      },
+      {
+         "name": "Ms. M",
+         "title": "Supervisor",
+         "company": "msterdam AMC",
+         "img": "anonymous.png'",
+         "quote": "Luuk showed a great willingness to learn and develop himself. This dedication was really noticable in the end result.",
+         "logo": "amsterdam_umc.png"
+      }
+   ]
+}
