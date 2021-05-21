@@ -13,11 +13,15 @@ const BlogContents = styled.div`
   flex-shrink: 1;
 `;
 
+const BlogSubHeader = styled.div`
+  margin-top: 1.5em;
+`;
+
 const BlogContent = ({ subHeading, content, children }) => (
   <BlogArticle>
     <BlogContents>
       <BlogStyle>
-        <Markdown source={subHeading} />
+        <BlogSubHeader><Markdown source={subHeading} /></BlogSubHeader>
         <Markdown source={content} />
         {children}
       </BlogStyle>
